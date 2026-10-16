@@ -18,3 +18,6 @@ export const leadLabel: Record<string, string> = {
 }
 
 export const hrs = (h: number) => `${h} hr${h === 1 ? '' : 's'}`
+
+/** Public-folder URL that works at the site root (Azure) and under a sub-path (GitHub Pages). */
+export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`

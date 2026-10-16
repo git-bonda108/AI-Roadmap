@@ -3,6 +3,7 @@ import { ArrowRight, Download, Printer } from 'lucide-react'
 import type { Pathway } from '../lib/types'
 import { beats, fnById, functions, pathways, stages, stageVars } from '../lib/data'
 import type { Route } from '../components/Nav'
+import { asset } from '../lib/labels'
 
 const ac = pathways['ai-practitioner']
 const dc = pathways['data-citizen']
@@ -26,7 +27,7 @@ export function Approach({ onRoute }: { onRoute: (r: Route, p?: Pathway['id']) =
           <div><div className="kicker">Approach note</div><b>GenAI mindset shift · for the client connect</b></div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             <button className="btn btn-red" onClick={() => window.print()}><Printer size={16} /> Save as PDF</button>
-            <a className="btn btn-ghost" href="/pdf/AI-Roadmap-Mindset-Approach-Note.pdf" download><Download size={16} /> Ready-made PDF</a>
+            <a className="btn btn-ghost" href={asset('/pdf/AI-Roadmap-Mindset-Approach-Note.pdf')} download><Download size={16} /> Ready-made PDF</a>
             <button className="btn btn-ghost" onClick={() => onRoute('mindset')}>See it in the app <ArrowRight size={15} /></button>
           </div>
         </div>
@@ -36,7 +37,7 @@ export function Approach({ onRoute }: { onRoute: (r: Route, p?: Pathway['id']) =
         <section className="page note">
           <div className="cover-top">
             <div className="kicker">OSBI · AI Practitioner and Data Citizen · Approach note</div>
-            <img src="/upgrad-logo-light.png" alt="upGrad Enterprise" className="cover-logo" />
+            <img src={asset('/upgrad-logo-light.png')} alt="upGrad Enterprise" className="cover-logo" />
           </div>
           <h1 className="note-title">Weaving the GenAI mindset shift through the whole programme</h1>
           <p className="note-lede">

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { FileDown, Presentation } from 'lucide-react'
 import type { PathwayId } from '../lib/types'
 import { pathways } from '../lib/data'
+import { asset } from '../lib/labels'
 
 export type Route = 'overview' | 'journey' | 'sessions' | 'mindset' | 'usecases' | 'roles' | 'print' | 'approach'
 export const routes: { id: Route; label: string }[] = [
@@ -69,7 +70,7 @@ export function Nav({ route, onRoute, pathway, onPathway, present, onPresent }: 
             <FileDown size={14} /><span>PDF</span>
           </button>
         </div>
-        <img className="nav-ug" src="/upgrad-logo-light.png" alt="upGrad Enterprise" />
+        <img className="nav-ug" src={asset('/upgrad-logo-light.png')} alt="upGrad Enterprise" />
       </div>
     </header>
   )

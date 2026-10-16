@@ -11,6 +11,7 @@ import { Roles } from './screens/Roles'
 import { Booklet, type BookletScope } from './screens/Booklet'
 import { Approach } from './screens/Approach'
 import { SessionDrawer } from './components/SessionDrawer'
+import { asset } from './lib/labels'
 
 const isRoute = (v: string): v is Route => v === 'print' || v === 'approach' || routes.some((r) => r.id === v)
 const isPathway = (v: string): v is PathwayId => v in pathways
@@ -80,7 +81,7 @@ export default function App() {
       <footer className="foot">
         <div className="wrap foot-in">
           <span>{program.client} capability programme · {program.startNote} · Draft for review</span>
-          <img src="/upgrad-logo-dark.png" alt="upGrad Enterprise" />
+          <img src={asset('/upgrad-logo-dark.png')} alt="upGrad Enterprise" />
         </div>
       </footer>
     </>

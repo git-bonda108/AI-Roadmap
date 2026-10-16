@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Download, Printer } from 'lucide-react'
 import type { Pathway, PathwayId, Session } from '../lib/types'
 import { fnById, pathways, program, roles, stages, stageVars } from '../lib/data'
-import { hrs, kindLabel, leadLabel, slotLabel } from '../lib/labels'
+import { asset, hrs, kindLabel, leadLabel, slotLabel } from '../lib/labels'
 
 export type BookletScope = PathwayId | 'both'
 
@@ -32,7 +32,7 @@ export function Booklet({ scope, onScope }: { scope: BookletScope; onScope: (s: 
           </div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             <button className="btn btn-red" onClick={() => window.print()}><Printer size={16} /> Save as PDF</button>
-            <a className="btn btn-ghost" href={`/pdf/AI-Roadmap-${scope}.pdf`} download><Download size={16} /> Ready-made PDF</a>
+            <a className="btn btn-ghost" href={asset(`/pdf/AI-Roadmap-${scope}.pdf`)} download><Download size={16} /> Ready-made PDF</a>
           </div>
         </div>
         <div className="wrap muted booklet-hint">In the print dialog choose <b>Save as PDF</b>, A4, and keep <b>Background graphics</b> on.</div>
@@ -51,7 +51,7 @@ function PathwayBook({ p }: { p: Pathway }) {
       <section className="page cover">
         <div className="cover-top">
           <div className="kicker">OSBI · Enterprise capability programme</div>
-          <img src="/upgrad-logo-light.png" alt="upGrad Enterprise" className="cover-logo" />
+          <img src={asset('/upgrad-logo-light.png')} alt="upGrad Enterprise" className="cover-logo" />
         </div>
         <h1 className="cover-title">{p.name}</h1>
         <p className="cover-tag">{p.tagline}</p>
