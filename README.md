@@ -2,7 +2,9 @@
 
 The training flow for OSBI's AI Practitioner (formerly AI Champion) and Data Citizen pathways, plus daily quick-win use cases by department,, as a static React app hosted on Azure Static Web Apps.
 
-**Live:** https://blue-field-0a3070700.6.azurestaticapps.net
+**Live:** https://git-bonda108.github.io/AI-Roadmap/ (GitHub Pages; redeploys automatically on every push to `main`)
+
+**Azure (offline):** https://blue-field-0a3070700.6.azurestaticapps.net was taken offline on 16 Oct 2026 because its subscription was disabled. It can be redeployed once billing is reactivated.
 (Static Web App `osbi-ai-hub`, resource group `rg-osbi-ai-hub`, subscription `b6ee57bd-…`, Free tier)
 
 ## Content
