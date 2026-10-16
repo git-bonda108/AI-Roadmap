@@ -1,0 +1,120 @@
+{
+  "program": {
+    "client": "OSBI",
+    "name": "AI-Roadmap",
+    "subtitle": "Two pathways. One progression from understanding to workplace proof.",
+    "startDate": null,
+    "startNote": "Start date to be confirmed",
+    "cadence": "2 live sessions a week · Day 1 and Day 2",
+    "sessionShape": "3 hrs · 90 min · 15 min break · 90 min",
+    "holidayNote": "One-week holiday pause; its position depends on the confirmed start date",
+    "scope": [
+      "Not developer training; no agent building",
+      "No certification or accreditation offered or implied",
+      "Panel review and five-minute defence are proposed, pending approval",
+      "Learners use permitted workplace data or safe mock data, subject to OSBI governance"
+    ]
+  },
+  "stages": [
+    { "n": 1, "id": "understand", "name": "Understand", "label": "Instructor-led foundation", "hours": 10, "lead": "instructor", "shape": "3 sessions + 1 hr self-paced" },
+    { "n": 2, "id": "practice", "name": "Practice", "label": "Live expert-led practical learning", "hours": 31, "lead": "trainer", "shape": "10 sessions + 1 hr clinic" },
+    { "n": 3, "id": "apply", "name": "Apply", "label": "Mentor-led workplace application", "hours": 28, "lead": "mentor", "shape": "8 sessions + 4 hrs independent" },
+    { "n": 4, "id": "prove", "name": "Prove", "label": "Capstone mentoring", "hours": 9, "lead": "mentor", "shape": "3 sessions" }
+  ],
+  "beats": [
+    { "id": "spark", "name": "Spark", "mins": "10–15 min", "line": "Open with a real GenAI use case from one OSBI function." },
+    { "id": "build", "name": "Build", "mins": "Core of the session", "line": "Hands-on work through the learner's own function." },
+    { "id": "reflect", "name": "Reflect", "mins": "~10 min", "line": "Two or three prompts and one thing I'll do differently." }
+  ],
+  "roles": [
+    { "id": "instructor", "name": "Instructor", "hours": "10 hrs · 3 sessions", "line": "Explains the foundation.", "stages": ["leads", "none", "none", "none"] },
+    { "id": "trainer", "name": "Expert trainer", "hours": "31 hrs · 10 sessions", "line": "Demonstrates, facilitates practice, observes, corrects.", "stages": ["none", "leads", "none", "none"] },
+    { "id": "mentor", "name": "Mentor", "hours": "33 hrs · 11 sessions", "line": "Supports workplace application and refinement.", "stages": ["none", "none", "leads", "leads"] },
+    { "id": "manager", "name": "Reporting manager", "hours": "OSBI role", "line": "Helps validate business value.", "stages": ["none", "none", "validates", "supports"] },
+    { "id": "panel", "name": "Panel", "hours": "One review, pending confirmation", "line": "Challenges the final case, if approved.", "stages": ["none", "none", "none", "challenges"] },
+    { "id": "learner", "name": "The learner", "hours": "Throughout", "line": "Owns the problem and the outcome.", "stages": ["builds", "practises", "owns", "defends"] }
+  ],
+  "functions": [
+    { "id": "operations", "name": "Operations", "context": "Origination and servicing processes, exception logs, shift handovers" },
+    { "id": "hr", "name": "HR", "context": "Job descriptions, policies, onboarding, engagement" },
+    { "id": "learning", "name": "Learning", "context": "Training content, session feedback, capability building" },
+    { "id": "risk", "name": "Risk", "context": "Risk registers, control narratives, risk reporting" },
+    { "id": "finance", "name": "Finance", "context": "MIS, variance commentary, regulatory reporting support" },
+    { "id": "lending", "name": "Lending", "context": "Credit memo structure, loan policy documents, underwriting support" },
+    { "id": "savings", "name": "Savings", "context": "Savings product communication, FAQs, account servicing" },
+    { "id": "audit", "name": "Audit", "context": "Audit findings, audit programmes, evidence review" },
+    { "id": "accounts", "name": "Accounts", "context": "Reconciliation notes, journal narratives, month-end" },
+    { "id": "procurement", "name": "Procurement", "context": "RFP responses, vendor comparisons, contracts" },
+    { "id": "quality", "name": "Quality", "context": "SOPs, quality-check sampling, quality reports" },
+    { "id": "customer-insights", "name": "Customer Insights", "context": "Survey feedback, complaint themes, insight reports" }
+  ],
+  "pathways": [
+    {
+      "id": "ai-practitioner",
+      "name": "AI Practitioner",
+      "tagline": "Confident, governed, peer-multiplying AI adoption",
+      "line": "Copilot fluency, responsible use, and adoption that spreads to peers.",
+      "facts": [
+        { "k": "Audience", "v": "Adjacent to technology, not inside it" },
+        { "k": "Primary tool", "v": "Copilot Chat with file upload; no M365 integration" },
+        { "k": "Unit of value", "v": "An adopted workflow others can copy" },
+        { "k": "Multiplier", "v": "Peers. The learner spreads the practice" },
+        { "k": "Risk lens", "v": "Responsible AI and permitted data boundaries" }
+      ],
+      "objectives": [
+        { "title": "Explain the machine", "line": "How Copilot produces an output, and why instructions change it." },
+        { "title": "Build reusable patterns", "line": "Prompt templates that hold up in daily work, not just in a demo." },
+        { "title": "Judge the fit", "line": "Which tasks suit AI, which do not, and why." },
+        { "title": "Work inside the boundary", "line": "Governance rules on permitted data and external tools." },
+        { "title": "Carry the room", "line": "Make the case to peers and managers, and defend it." }
+      ],
+      "mindset": [
+        { "stage": 1, "shift": "Demystify", "from": "AI is magic, or a threat", "to": "AI predicts; I direct it and I check it" },
+        { "stage": 2, "shift": "Experiment", "from": "One prompt, take what comes", "to": "Iterate, structure, reuse" },
+        { "stage": 3, "shift": "Redesign", "from": "AI helps me with a task", "to": "AI changes how my workflow runs" },
+        { "stage": 4, "shift": "Champion", "from": "It works for me", "to": "I can prove it and spread it" }
+      ],
+      "pulse": [
+        "I know what AI can and cannot do in my role.",
+        "I check AI output before I use it.",
+        "I reach for AI first on drafting and summarising tasks.",
+        "I can name a workflow in my team that AI could improve.",
+        "I have helped a colleague use AI well."
+      ]
+    },
+    {
+      "id": "data-citizen",
+      "name": "Data Citizen",
+      "tagline": "Independent, confident, decision-ready data practice",
+      "line": "Raw data to decision-ready insight, without waiting on an analyst.",
+      "facts": [
+        { "k": "Audience", "v": "Business roles where technology is not the core" },
+        { "k": "Primary tools", "v": "Excel, data preparation, dashboards, AI assistance; pending tool confirmation" },
+        { "k": "Unit of value", "v": "A decision-ready insight, not a report request" },
+        { "k": "Multiplier", "v": "Independence. Fewer handoffs to analysts" },
+        { "k": "Risk lens", "v": "Data quality, privacy, and governance" }
+      ],
+      "objectives": [
+        { "title": "Prepare it fast", "line": "Turn raw or unstructured data into an analysis-ready dataset." },
+        { "title": "Answer the question", "line": "Reach the answer without raising a request to someone else." },
+        { "title": "Check the answer", "line": "Judge whether the analysis is sound before acting on it." },
+        { "title": "Show the story", "line": "A dashboard a decision-maker reads without explanation." },
+        { "title": "Protect the data", "line": "Quality, privacy, and governance judgment on what they touch." },
+        { "title": "Land the decision", "line": "Connect the insight to a decision, and defend the reasoning." }
+      ],
+      "mindset": [
+        { "stage": 1, "shift": "Demystify", "from": "Data is the analyst's job", "to": "Data is evidence I can question" },
+        { "stage": 2, "shift": "Experiment", "from": "Raise a request, wait for a report", "to": "Prepare, analyse and check it myself" },
+        { "stage": 3, "shift": "Redesign", "from": "The monthly report as usual", "to": "A decision-ready view my team uses" },
+        { "stage": 4, "shift": "Champion", "from": "These are my numbers", "to": "A defended decision others act on" }
+      ],
+      "pulse": [
+        "I can tell whether a dataset is fit to use.",
+        "I can answer a routine business question without raising a request.",
+        "I check an analysis before acting on it.",
+        "I can present a finding a decision-maker understands without explanation.",
+        "I know what data I may share, upload or combine."
+      ]
+    }
+  ]
+}

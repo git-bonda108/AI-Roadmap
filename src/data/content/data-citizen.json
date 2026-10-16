@@ -1,0 +1,1539 @@
+{
+  "pathway": "data-citizen",
+  "sessions": {
+    "S1": {
+      "concept": "Data has value only through the decision it informs. Knowing where your data comes from is the first step to questioning it.",
+      "spark": {
+        "useCaseId": "dc-operations-1",
+        "hook": "One exception log, three different answers. Which source would you trust, and why?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Why data matters to a decision; data types and where they come from."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Map the sources you use in your own role, and how each reaches you."
+        }
+      ],
+      "build": "Map every data source used in your role: origin, owner, refresh cadence, format, and the decision each one feeds.",
+      "howTo": [
+        "List the decisions you make or support each week.",
+        "Name the data behind each decision and where it comes from.",
+        "Record owner, format and refresh cadence for each source.",
+        "Flag any source you use but could not explain."
+      ],
+      "reflect": [
+        "Which decision in your role rests on data you have never questioned?",
+        "Where did you assume data was someone else's job?",
+        "One source you will trace back to its origin this week."
+      ]
+    },
+    "S2": {
+      "concept": "Bad data rarely announces itself. Completeness and consistency checks catch it before it quietly shapes a decision.",
+      "spark": {
+        "useCaseId": "dc-quality-1",
+        "hook": "A QC sample looked clean until someone counted the blanks."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Common quality failures: missing values, inconsistent codes, duplicates, stale records."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build a quality checklist and test it on a mock dataset from your function."
+        }
+      ],
+      "build": "Build a data quality checklist for a dataset you use, then test it on a safe mock version.",
+      "howTo": [
+        "Choose one dataset you rely on in your function.",
+        "Write checks for completeness, consistency, duplicates and timeliness.",
+        "Run each check on the mock version and log failures.",
+        "Note how each failure could reach a decision unnoticed."
+      ],
+      "reflect": [
+        "Which quality failure would most likely slip past you today?",
+        "What would you now question before trusting a figure?",
+        "One check you will run before your next report."
+      ]
+    },
+    "S3": {
+      "concept": "Governance tells you what may be shared, uploaded or combined. Handling rules come before analysis, not after it.",
+      "spark": {
+        "useCaseId": "dc-risk-1",
+        "hook": "Can this risk extract go into Copilot Chat? Decide before you paste."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Governance basics, data classification, and the readiness diagnostic."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Write handling rules for the data you touch, including AI-assistance limits."
+        }
+      ],
+      "build": "Complete the readiness diagnostic, then write a data handling checklist for the data your role touches.",
+      "howTo": [
+        "Complete the readiness diagnostic individually.",
+        "List the data types you handle and their classification.",
+        "For each, note what may be shared, uploaded or combined.",
+        "Mark anything needing anonymisation or mock data before AI use."
+      ],
+      "reflect": [
+        "Which data do you handle that must never go into AI assistance?",
+        "How does governance change what you treat as usable evidence?",
+        "Complete the mindset pulse before you leave."
+      ]
+    },
+    "S4": {
+      "concept": "Messy data is normal. A repeatable cleaning routine turns it into something you can analyse yourself, without raising a request.",
+      "spark": {
+        "useCaseId": "dc-lending-1",
+        "hook": "Same broker, four spellings, two date formats. Can you trust the pipeline count?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Spotting mess: blanks, mixed formats, duplicates, inconsistent labels."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Clean a mock dataset from your own function and log each step."
+        }
+      ],
+      "build": "Clean a messy mock dataset from your function in Excel, using AI assistance to suggest steps, and log every change.",
+      "howTo": [
+        "Profile the dataset: blanks, formats, duplicates, odd values.",
+        "Ask AI assistance to suggest cleaning steps for the issues found.",
+        "Apply each step in Excel and record what changed.",
+        "Compare row counts and totals before and after cleaning."
+      ],
+      "reflect": [
+        "Which cleaning step would you previously have sent to an analyst?",
+        "How do you know your cleaning did not remove valid records?",
+        "One messy file you will clean yourself this month."
+      ]
+    },
+    "S5": {
+      "concept": "Shape data once, then repeat it. A documented transformation routine makes next month's preparation faster and consistent.",
+      "spark": {
+        "useCaseId": "dc-accounts-1",
+        "hook": "Month-end reconciliation rebuilt by hand every month. What if the steps were saved?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Shaping data for analysis: columns, types, layout, derived fields."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build and document transformation steps you can rerun next month."
+        }
+      ],
+      "build": "Turn a mock monthly extract from your function into a reusable preparation routine, documented so a colleague could rerun it.",
+      "howTo": [
+        "Decide the shape your analysis needs: rows, columns, types.",
+        "Build each transformation step in Excel or the preparation tool.",
+        "Document the steps in order, in plain language.",
+        "Rerun the routine on a second month's mock extract."
+      ],
+      "reflect": [
+        "Which monthly task do you rebuild from scratch each time?",
+        "What would a colleague need to rerun your routine without you?",
+        "One preparation routine you will document this week."
+      ]
+    },
+    "S6": {
+      "concept": "Combining sources adds value only if the join holds. Always check row counts and unmatched records after joining.",
+      "spark": {
+        "useCaseId": "dc-savings-1",
+        "hook": "The joined list had more rows than either source. What went wrong?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Join types, keys, and how joins break: duplicates, mismatched formats."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Combine two mock datasets from your function and prove the join held."
+        }
+      ],
+      "build": "Combine two mock datasets from your function using a lookup or merge, then verify the result with counts and unmatched checks.",
+      "howTo": [
+        "Identify a shared key and check it is unique.",
+        "Standardise key formats in both datasets before joining.",
+        "Join with a lookup or merge in Excel or the preparation tool.",
+        "Reconcile row counts and list unmatched records."
+      ],
+      "reflect": [
+        "How would you have spotted a broken join before this session?",
+        "Which combined dataset in your work has never been checked?",
+        "One check you will always run after a join."
+      ]
+    },
+    "S7": {
+      "concept": "Formulas and lookups answer business questions directly. The skill is choosing the right calculation and checking it.",
+      "spark": {
+        "useCaseId": "dc-finance-1",
+        "hook": "Variance commentary waits days for figures. Could a lookup answer it today?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Core formulas and lookups applied to real business questions."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Complete two analyses on a mock dataset from your function."
+        }
+      ],
+      "build": "Answer two business questions from your function using formulas and lookups on a permitted or mock dataset.",
+      "howTo": [
+        "Write each business question in one sentence.",
+        "Choose the formulas and lookups the question needs.",
+        "Use AI assistance to explain or debug a formula, not to decide.",
+        "Check results against a manual total or known figure."
+      ],
+      "reflect": [
+        "Which question could you now answer without raising a request?",
+        "How did you check the formula gave the right answer?",
+        "One routine question you will answer yourself next week."
+      ]
+    },
+    "S8": {
+      "concept": "Pivots summarise thousands of rows in seconds. The judgement is in how you group, and what the summary hides.",
+      "spark": {
+        "useCaseId": "dc-procurement-1",
+        "hook": "Vendor spend by category looked fine until it was grouped by month."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Pivots, grouping and summarising at scale."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build a summarised view of a permitted or mock dataset from your function."
+        }
+      ],
+      "build": "Summarise a permitted or mock dataset from your function with pivots, then test whether a different grouping changes the story.",
+      "howTo": [
+        "Decide what the summary must answer before building it.",
+        "Build a pivot with the grouping that fits the question.",
+        "Regroup by another field and compare the picture.",
+        "Reconcile pivot totals to the source data."
+      ],
+      "reflect": [
+        "What did a different grouping reveal that the first one hid?",
+        "Which summary in your work might be hiding something?",
+        "One summary you will rebuild and recheck yourself."
+      ]
+    },
+    "S9": {
+      "concept": "A sharp question picks the right measure. Test whether the answer holds before anyone acts on it.",
+      "spark": {
+        "useCaseId": "dc-customer-insights-1",
+        "hook": "Complaints are up. Per what, compared with when, and does it matter?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Turning a vague request into a precise question with the right measure."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Answer one framed question from your function and document the method."
+        }
+      ],
+      "build": "Frame a business question from your function, choose its measure, answer it, and document the method and its limits.",
+      "howTo": [
+        "Rewrite a vague request as one precise question.",
+        "Choose the measure and comparison that answers it.",
+        "Answer it, then test with another period or segment.",
+        "Document method, assumptions and limits in a few lines."
+      ],
+      "reflect": [
+        "How did reframing the question change the answer?",
+        "Would your answer hold if someone tested it differently?",
+        "One request you will reframe before starting analysis."
+      ]
+    },
+    "S10": {
+      "concept": "The right chart answers the question at a glance. Remove everything the reader does not need.",
+      "spark": {
+        "useCaseId": "dc-hr-1",
+        "hook": "Twelve colours, three axes, no conclusion. What is this chart asking?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Matching chart type to question; decluttering and labelling."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build three charts that each answer one question from your function."
+        }
+      ],
+      "build": "Build three charts from an aggregated, anonymised dataset in your function, each answering one stated question.",
+      "howTo": [
+        "Write the question each chart must answer.",
+        "Pick the chart type that best fits each question.",
+        "Remove gridlines, legends and colours the reader does not need.",
+        "Title each chart with its answer, not its topic."
+      ],
+      "reflect": [
+        "Could a reader get your answer without you explaining it?",
+        "What did you remove, and did the chart get clearer?",
+        "One chart in your regular reporting you will simplify."
+      ]
+    },
+    "S11": {
+      "concept": "A dashboard works only if a decision-maker can read it alone. Design for the decision, not the data.",
+      "spark": {
+        "useCaseId": "dc-operations-2",
+        "hook": "The shift lead opened the dashboard and asked, 'So what do I do?'"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Dashboard layout: decision first, key measures, minimal clutter."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build a working dashboard for a decision in your function."
+        }
+      ],
+      "build": "Build a working dashboard in Excel or the dashboard tool (to be confirmed) for one decision in your function.",
+      "howTo": [
+        "Name the decision and the person who makes it.",
+        "Choose three to five measures that inform that decision.",
+        "Lay out the most important measure first, top left.",
+        "Test it with a peer who has no explanation."
+      ],
+      "reflect": [
+        "Could your peer act on the dashboard without asking you?",
+        "Which report request could this dashboard replace?",
+        "One change to make the dashboard readable alone."
+      ]
+    },
+    "S12": {
+      "concept": "Numbers do not speak for themselves. A short narrative connects the finding to the decision it should change.",
+      "spark": {
+        "useCaseId": "dc-learning-1",
+        "hook": "Session feedback scores rose. So what should the team do next?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Structuring an insight: finding, evidence, implication, recommendation."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Write and present an insight summary from your function to a non-technical peer."
+        }
+      ],
+      "build": "Write an insight summary and narrative for an analysis from your function, then present it to a non-technical peer.",
+      "howTo": [
+        "State the finding in one sentence a non-specialist understands.",
+        "Add two pieces of supporting evidence and one caveat.",
+        "Use AI assistance to tighten wording; check every figure yourself.",
+        "Present in three minutes and note listener questions."
+      ],
+      "reflect": [
+        "Which question from your listener exposed a gap in your story?",
+        "Did AI assistance change any meaning you had to correct?",
+        "One insight you will present yourself rather than send as a table."
+      ]
+    },
+    "S13": {
+      "concept": "Review catches what the author misses. Correcting each other's analysis builds the habit of checking before relying.",
+      "spark": {
+        "useCaseId": "dc-audit-1",
+        "hook": "An audit sample reviewer found the total right but the method wrong."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Review method: question, data, method, result, visual."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Peer-review a colleague's analysis and visuals, then improve your own."
+        }
+      ],
+      "build": "Swap an analysis and its visuals with a peer, review against a shared checklist, then correct your own work.",
+      "howTo": [
+        "Agree a review checklist covering data, method, result and visual.",
+        "Review your peer's work and note specific issues.",
+        "Discuss findings and agree what to change.",
+        "Correct your own analysis and record what changed."
+      ],
+      "reflect": [
+        "What did your reviewer catch that you had missed?",
+        "How will you check your own work before sharing next time?",
+        "One habit from peer review you will keep."
+      ]
+    },
+    "S14": {
+      "concept": "The best opportunities hide in routine work. Find where a data-driven view could change a decision, then size it.",
+      "spark": {
+        "useCaseId": "dc-hr-2",
+        "hook": "Onboarding status is tracked in three places. Who sees the whole picture?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Spotting data-driven opportunities in your own recurring work."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Identify and size three candidate opportunities from your function."
+        }
+      ],
+      "build": "Identify at least three data-driven opportunities in your own work and size the value of each.",
+      "howTo": [
+        "List recurring reports, requests and decisions in your role.",
+        "Mark where data arrives late, scattered or unchecked.",
+        "Describe three opportunities as a decision plus a better view.",
+        "Size each by time, frequency and decision affected."
+      ],
+      "reflect": [
+        "Which routine report could become a view your team uses?",
+        "What would change if that decision had better data?",
+        "One opportunity you would put to your manager."
+      ]
+    },
+    "S15": {
+      "concept": "Your manager validates business value. Prepare a short, evidenced conversation and select one opportunity together.",
+      "spark": {
+        "useCaseId": "dc-finance-2",
+        "hook": "Two strong ideas, one manager. Which one solves a problem they recognise?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Preparing the manager conversation: problem, value, data, effort."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Prepare your case, run the manager conversation, and select one opportunity."
+        }
+      ],
+      "build": "Prepare a one-page summary of your three opportunities, run the manager conversation, and record the selected opportunity.",
+      "howTo": [
+        "Summarise each opportunity: problem, decision, data, effort.",
+        "Anticipate your manager's questions and prepare answers.",
+        "Run the conversation and listen for their priorities.",
+        "Record the selected opportunity and agreed success measure."
+      ],
+      "reflect": [
+        "How did your manager's view change the opportunity?",
+        "Which team decision will your work actually change?",
+        "One thing you will confirm with your manager next."
+      ]
+    },
+    "S16": {
+      "concept": "Permission comes before analysis. Source permitted workplace data, or build safe mock data, for your selected problem.",
+      "spark": {
+        "useCaseId": "dc-savings-2",
+        "hook": "The real file holds customer details. What does a safe mock version need?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Locating permitted data; rules for anonymisation and mock data."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Source your working dataset and record its permissions."
+        }
+      ],
+      "build": "Locate permitted workplace data for your selected problem, or build safe mock data, and record its permissions.",
+      "howTo": [
+        "List the fields your analysis actually needs.",
+        "Confirm with the data owner what you may use.",
+        "Remove or mask identifiers, or build a mock equivalent.",
+        "Record source, permissions and any handling limits."
+      ],
+      "reflect": [
+        "Does your dataset contain only what the decision needs?",
+        "Who must agree before your team relies on this data?",
+        "One permission you still need to confirm."
+      ]
+    },
+    "S17": {
+      "concept": "Analysis-ready means clean, structured and documented. Apply your earlier routines to the real problem with mentor input.",
+      "spark": {
+        "useCaseId": "dc-lending-2",
+        "hook": "The application data was clean enough for practice. Is it ready for decisions?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Applying cleaning and structuring routines to your working dataset."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Prepare your working dataset to analysis-ready with mentor review."
+        }
+      ],
+      "build": "Clean and structure your working dataset into an analysis-ready state, documenting each step for mentor review.",
+      "howTo": [
+        "Profile your working dataset for quality issues.",
+        "Apply cleaning and transformation steps from your routine.",
+        "Document each step so it can be rerun.",
+        "Review readiness with your mentor and fix gaps."
+      ],
+      "reflect": [
+        "Could your team rerun this preparation without you?",
+        "What would make this dataset trustworthy enough to use weekly?",
+        "One preparation step you will automate in your routine."
+      ]
+    },
+    "S18": {
+      "concept": "An answer is only useful once checked. Test your analysis before anyone relies on it.",
+      "spark": {
+        "useCaseId": "dc-quality-2",
+        "hook": "The analysis said error rates fell. Then someone checked the sample size."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Answering the selected question with the right measures."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Check the answer: reconcile totals, test alternatives, note limits."
+        }
+      ],
+      "build": "Answer your selected business question and check the analysis before relying on it.",
+      "howTo": [
+        "Restate the question and the measure agreed with your manager.",
+        "Build the analysis on your analysis-ready dataset.",
+        "Reconcile totals and test with another period or segment.",
+        "Record limits and what would change the answer."
+      ],
+      "reflect": [
+        "How confident are you, and what is that confidence based on?",
+        "What would your team need to trust this answer weekly?",
+        "One check you will repeat each time the data refreshes."
+      ]
+    },
+    "S19": {
+      "concept": "A dashboard earns its place when a decision-maker uses it week to week. Build for that routine.",
+      "spark": {
+        "useCaseId": "dc-customer-insights-2",
+        "hook": "The insight report arrives monthly. The decisions happen weekly."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Designing for the weekly decision and its decision-maker."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Build and test the dashboard or report with its intended user."
+        }
+      ],
+      "build": "Turn your checked analysis into a working dashboard or report your decision-maker can use week to week.",
+      "howTo": [
+        "Confirm who uses it, when, and for which decision.",
+        "Build it in Excel or the dashboard tool (to be confirmed).",
+        "Add refresh steps and a short data note.",
+        "Test with the intended user and capture their feedback."
+      ],
+      "reflect": [
+        "Does your view replace a report, or add another one?",
+        "What would stop your team using this every week?",
+        "One change your user asked for that you will make."
+      ]
+    },
+    "S20": {
+      "concept": "Impact is estimated honestly, not promised. A one-page plan shows how the team adopts the new view.",
+      "spark": {
+        "useCaseId": "dc-procurement-2",
+        "hook": "The vendor review took weeks. How would you show the difference now?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Estimating decision or business impact, with stated assumptions."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Write the one-page enablement plan for your team."
+        }
+      ],
+      "build": "Estimate the business or decision impact of your work, and write a one-page enablement plan for your team.",
+      "howTo": [
+        "Compare the old and new way: time, steps, handoffs.",
+        "State the impact estimate with every assumption visible.",
+        "Plan who uses the view, how often, and who maintains it.",
+        "Fit it on one page and review with your mentor."
+      ],
+      "reflect": [
+        "Which assumption in your estimate is weakest, and how will you test it?",
+        "Who in your team needs to change their routine for this to land?",
+        "One step to get the view adopted, not just built."
+      ]
+    },
+    "S21": {
+      "concept": "Every useful dataset carries a risk. Name a privacy or governance risk and define a practical mitigation.",
+      "spark": {
+        "useCaseId": "dc-risk-2",
+        "hook": "The dashboard was useful. It also showed more than its audience should see."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Identifying privacy and governance risks in your own case."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Define a practical mitigation and record it in your case."
+        }
+      ],
+      "build": "Name one data privacy or governance risk in your work and define a practical, owned mitigation.",
+      "howTo": [
+        "Review your data, outputs and audience for exposure risks.",
+        "Name the most material risk in one sentence.",
+        "Define a mitigation with an owner and a check.",
+        "Confirm the analysis informs, never automates, any decision."
+      ],
+      "reflect": [
+        "Would your view still be safe if shared one level wider?",
+        "How has your idea of usable data changed since Session 3?",
+        "Complete the mindset pulse before you leave."
+      ]
+    },
+    "S22": {
+      "concept": "A case persuades when its parts connect: question, analysis, impact, plan and risk tell one story.",
+      "spark": {
+        "useCaseId": "dc-accounts-2",
+        "hook": "Strong reconciliation analysis, scattered across five files. Where is the case?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Structuring the case: question, analysis, impact, plan, risk."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Assemble your evidence into one complete workplace data case."
+        }
+      ],
+      "build": "Pull your analysis, impact estimate, enablement plan and named risk into one complete workplace data case.",
+      "howTo": [
+        "Outline the case from question to recommended decision.",
+        "Insert your analysis, impact, plan and risk in order.",
+        "Check every figure traces back to the dataset.",
+        "Cut anything that does not support the decision."
+      ],
+      "reflect": [
+        "Could someone act on your case without you in the room?",
+        "Which part of your case is weakest, and why?",
+        "One piece of evidence you will strengthen before review."
+      ]
+    },
+    "S23": {
+      "concept": "Review is where a case becomes defensible. Close gaps and tighten evidence before others rely on it.",
+      "spark": {
+        "useCaseId": "dc-audit-2",
+        "hook": "The reviewer asked one question: 'How do you know?' The case had no answer."
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Mentor review of the full case against agreed criteria."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Close gaps, tighten evidence and correct the case."
+        }
+      ],
+      "build": "Take mentor review of your full case, then close gaps, tighten evidence and record each correction.",
+      "howTo": [
+        "Present your case to your mentor in brief.",
+        "Log every gap or challenge raised.",
+        "Fix evidence, method or narrative for each one.",
+        "Recheck figures and confirm the case still holds."
+      ],
+      "reflect": [
+        "Which challenge surprised you most, and what did it reveal?",
+        "Is this a decision others could act on, or still your numbers?",
+        "One correction that made your case more defensible."
+      ]
+    },
+    "S24": {
+      "concept": "Defending a case means anticipating the hard questions. Rehearse the five-minute presentation until the reasoning holds under challenge.",
+      "spark": {
+        "useCaseId": "dc-learning-2",
+        "hook": "Five minutes, three panel questions. Which one would you dread most?"
+      },
+      "segments": [
+        {
+          "label": "Segment 1",
+          "mins": 90,
+          "beats": [
+            "spark",
+            "build"
+          ],
+          "focus": "Shaping the five-minute presentation around the decision."
+        },
+        {
+          "label": "Break",
+          "mins": 15
+        },
+        {
+          "label": "Segment 2",
+          "mins": 90,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Rehearse with challenge questions and refine answers."
+        }
+      ],
+      "build": "Rehearse your five-minute presentation and practise answering likely panel questions, if the panel review is approved.",
+      "howTo": [
+        "Cut the case to a five-minute storyline.",
+        "Rehearse once, timed, with a peer or mentor.",
+        "List the hardest likely questions and draft answers.",
+        "Rehearse again and tighten weak answers."
+      ],
+      "reflect": [
+        "Which question would test your reasoning, not just your numbers?",
+        "Who will act on your decision, and what will you share with them?",
+        "Complete the mindset pulse to close the programme."
+      ]
+    },
+    "SELF": {
+      "concept": "Consolidate Stage 1 with curated reading and short videos on data fundamentals and decision-making.",
+      "segments": [
+        {
+          "label": "Self-paced",
+          "mins": 60,
+          "beats": [],
+          "focus": "Curated reading and videos on data fundamentals and decision-making."
+        }
+      ],
+      "howTo": [
+        "Work through the curated reading and short videos.",
+        "Note one idea each on sources, quality and governance.",
+        "Link each idea to a decision in your role.",
+        "Bring your consolidated notes to Session 4."
+      ],
+      "reflect": [
+        "Which idea most changed how you view your data?",
+        "What question will you bring into Stage 2?"
+      ]
+    },
+    "CLINIC": {
+      "concept": "Clear blockers from your own data before the applied stage, working them through live with the trainer.",
+      "segments": [
+        {
+          "label": "Single block",
+          "mins": 60,
+          "beats": [
+            "build",
+            "reflect"
+          ],
+          "focus": "Live blocker clearance on learners' own data problems."
+        }
+      ],
+      "build": "Bring one blocker from your own data and work it through with the trainer and peers.",
+      "howTo": [
+        "Write your blocker in one sentence before the clinic.",
+        "Share a safe mock or anonymised sample of the problem.",
+        "Work it through with the trainer and note the fix.",
+        "Record anything still open for Stage 3."
+      ],
+      "reflect": [
+        "Which blocker could you now solve yourself next time?",
+        "What do you still rely on others to do with data?",
+        "Complete the mindset pulse before you leave."
+      ]
+    },
+    "INDEP": {
+      "concept": "Work your analysis between sessions and produce progress artefacts that show the case taking shape.",
+      "segments": [
+        {
+          "label": "Independent",
+          "mins": 240,
+          "beats": [],
+          "focus": "Analysis work between sessions and progress artefacts."
+        }
+      ],
+      "howTo": [
+        "Plan independent hours around your Stage 3 milestones.",
+        "Work on permitted or mock data only.",
+        "Save a dated progress artefact after each work block.",
+        "Bring questions and artefacts to your next mentor session."
+      ],
+      "reflect": [
+        "What did you complete without needing to ask anyone?",
+        "Is your view becoming something your team would use?"
+      ]
+    }
+  },
+  "useCases": [
+    {
+      "id": "dc-operations-1",
+      "functionId": "operations",
+      "sessionKey": "S1",
+      "title": "Tracing the sources behind exception reporting",
+      "scenario": "Exception counts differ between the log, the handover note and the weekly summary. Which source feeds which decision?",
+      "input": "Mock servicing exception log, shift handover notes and weekly summary, anonymised.",
+      "aiDoes": "A source map showing origin, owner, refresh and the decision each source feeds, with AI assistance drafting the summary.",
+      "howTo": [
+        "List every place exception counts appear.",
+        "Trace each count back to its originating source.",
+        "Ask AI assistance to tabulate owner, refresh and use.",
+        "Mark where counts diverge and why."
+      ],
+      "humanCheck": "Learner confirms each source and owner with the process, not AI output.",
+      "measure": "Number of sources mapped; number of unexplained discrepancies.",
+      "boundary": "Mock or anonymised logs only; no account or customer identifiers pasted into AI assistance."
+    },
+    {
+      "id": "dc-quality-1",
+      "functionId": "quality",
+      "sessionKey": "S2",
+      "title": "Finding hidden failures in a QC sample",
+      "scenario": "A quality-check sample passed review, yet fields were blank, codes inconsistent and some cases duplicated.",
+      "input": "Mock QC sample with deliberate blanks, inconsistent outcome codes and duplicate case references.",
+      "aiDoes": "A completeness and consistency check in Excel, plus an AI-assisted draft quality checklist.",
+      "howTo": [
+        "Count blanks per field with simple formulas.",
+        "List distinct outcome codes and spot inconsistencies.",
+        "Flag duplicate case references.",
+        "Ask AI assistance to draft a checklist from the failures."
+      ],
+      "humanCheck": "Learner checks each flagged failure against the sample before adding it to the checklist.",
+      "measure": "Number of quality failures found; minutes to run the checklist.",
+      "boundary": "Mock sample only; QC outcomes inform review, never individual performance decisions."
+    },
+    {
+      "id": "dc-risk-1",
+      "functionId": "risk",
+      "sessionKey": "S3",
+      "title": "Deciding what may go into AI assistance",
+      "scenario": "A colleague wants to paste a risk register extract into Copilot Chat. What may be shared, and how?",
+      "input": "Mock risk register extract with fields classified by sensitivity.",
+      "aiDoes": "A classification of each field as share, mask or exclude, and an AI-assisted handling checklist.",
+      "howTo": [
+        "Classify each field by sensitivity.",
+        "Decide share, mask or exclude for each.",
+        "Build a safe extract with masked fields.",
+        "Ask AI assistance to draft handling rules from decisions."
+      ],
+      "humanCheck": "Learner confirms classifications against OSBI governance guidance, not AI suggestions.",
+      "measure": "Number of fields correctly classified; minutes to produce a safe extract.",
+      "boundary": "Copilot Chat via paste or upload only; follow OSBI data classification rules."
+    },
+    {
+      "id": "dc-lending-1",
+      "functionId": "lending",
+      "sessionKey": "S4",
+      "title": "Cleaning a messy application pipeline extract",
+      "scenario": "A pipeline extract has broker names spelled several ways and mixed date formats, so counts disagree.",
+      "input": "Mock mortgage application pipeline extract with inconsistent broker names, date formats and blanks.",
+      "aiDoes": "A cleaned dataset with standardised names and dates, and a step log; AI assistance suggests cleaning steps.",
+      "howTo": [
+        "Profile blanks, formats and name variants.",
+        "Ask AI assistance to suggest standardisation steps.",
+        "Apply steps in Excel and log each change.",
+        "Compare counts and totals before and after."
+      ],
+      "humanCheck": "Learner verifies that no valid applications were merged or dropped.",
+      "measure": "Minutes from raw extract to clean dataset; records changed.",
+      "boundary": "Mock data only; the dataset informs pipeline reporting, never credit decisions."
+    },
+    {
+      "id": "dc-accounts-1",
+      "functionId": "accounts",
+      "sessionKey": "S5",
+      "title": "A month-end reconciliation routine you can rerun",
+      "scenario": "Each month the reconciliation extract is reshaped by hand. Saving the steps would make it repeatable.",
+      "input": "Two months of mock ledger and bank-side extracts, anonymised.",
+      "aiDoes": "A documented transformation routine in Excel or the preparation tool, with AI assistance explaining steps.",
+      "howTo": [
+        "Define the shape the reconciliation needs.",
+        "Build transformation steps on month one.",
+        "Document steps in plain language with AI assistance.",
+        "Rerun on month two and compare."
+      ],
+      "humanCheck": "Learner reconciles routine output to control totals for both months.",
+      "measure": "Minutes to prepare each month's reconciliation; manual steps remaining.",
+      "boundary": "Mock extracts only; no account numbers or real balances in AI assistance."
+    },
+    {
+      "id": "dc-savings-1",
+      "functionId": "savings",
+      "sessionKey": "S6",
+      "title": "Joining maturities to contact preferences",
+      "scenario": "A maturity list must be joined to contact preferences before outreach. Did the join hold?",
+      "input": "Mock savings maturity list and mock contact-preference list sharing a pseudonymised reference.",
+      "aiDoes": "A combined dataset with row-count reconciliation and an unmatched-records list; AI assistance explains the lookup.",
+      "howTo": [
+        "Check the reference is unique in both lists.",
+        "Standardise reference formats before joining.",
+        "Join with a lookup and count matches.",
+        "List unmatched and duplicated records."
+      ],
+      "humanCheck": "Learner reconciles row counts and reviews every unmatched record.",
+      "measure": "Rows matched, unmatched and duplicated after the join.",
+      "boundary": "Pseudonymised mock data only; no names, contact details or account numbers."
+    },
+    {
+      "id": "dc-finance-1",
+      "functionId": "finance",
+      "sessionKey": "S7",
+      "title": "Answering a variance question with lookups",
+      "scenario": "A manager asks why a cost line moved against budget. The figures sit in two tables.",
+      "input": "Mock budget and actuals tables by cost centre and month.",
+      "aiDoes": "Variance by cost centre using formulas and lookups, with AI assistance explaining the formulas.",
+      "howTo": [
+        "State the variance question in one sentence.",
+        "Look up budget against actuals by cost centre.",
+        "Calculate variance and percentage variance.",
+        "Ask AI assistance to explain any failing formula."
+      ],
+      "humanCheck": "Learner ties totals back to source tables before drafting commentary.",
+      "measure": "Hours from question to answered variance.",
+      "boundary": "Mock figures only; analysis supports commentary, not regulatory submissions."
+    },
+    {
+      "id": "dc-procurement-1",
+      "functionId": "procurement",
+      "sessionKey": "S8",
+      "title": "Summarising vendor spend with pivots",
+      "scenario": "Vendor spend looks stable by category, but grouping by month shows a sharp change.",
+      "input": "Mock purchase-order dataset with vendor, category, month and amount.",
+      "aiDoes": "Pivot summaries by category and by month, with AI assistance suggesting groupings to compare.",
+      "howTo": [
+        "Decide what the summary must answer.",
+        "Build a pivot by category.",
+        "Regroup by month and compare the picture.",
+        "Reconcile pivot totals to the source."
+      ],
+      "humanCheck": "Learner checks the change against source rows before reporting it.",
+      "measure": "Minutes to produce the summary; groupings tested.",
+      "boundary": "Mock spend data only; no contract terms or commercially sensitive details in AI assistance."
+    },
+    {
+      "id": "dc-customer-insights-1",
+      "functionId": "customer-insights",
+      "sessionKey": "S9",
+      "title": "Framing a complaint-trend question properly",
+      "scenario": "Complaints appear to be rising. The answer depends on rate versus count, and which period.",
+      "input": "Mock monthly complaint counts by theme with matching customer volumes, anonymised.",
+      "aiDoes": "A framed question, chosen measure and tested answer; AI assistance challenges the framing.",
+      "howTo": [
+        "Rewrite 'complaints are up' as a precise question.",
+        "Choose count or rate and a comparison period.",
+        "Answer it, then test another period.",
+        "Ask AI assistance for alternative interpretations to check."
+      ],
+      "humanCheck": "Learner decides which measure fits; AI alternatives are tested, not adopted.",
+      "measure": "Days from question to documented answer.",
+      "boundary": "Aggregated mock data only; no complaint text with customer details."
+    },
+    {
+      "id": "dc-hr-1",
+      "functionId": "hr",
+      "sessionKey": "S10",
+      "title": "Charting onboarding time clearly",
+      "scenario": "An onboarding chart uses too many colours and axes, and nobody can say what it shows.",
+      "input": "Aggregated, anonymised mock data on onboarding duration by month and stage.",
+      "aiDoes": "Three simplified charts each answering one question; AI assistance suggests chart types.",
+      "howTo": [
+        "Write the question each chart answers.",
+        "Ask AI assistance which chart type fits.",
+        "Build and declutter each chart in Excel.",
+        "Title each chart with its answer."
+      ],
+      "humanCheck": "Learner checks each chart against the data and the question.",
+      "measure": "Seconds for a peer to state each chart's answer.",
+      "boundary": "Aggregated mock data only; no individual records; never used for hiring or performance decisions."
+    },
+    {
+      "id": "dc-operations-2",
+      "functionId": "operations",
+      "sessionKey": "S11",
+      "title": "A dashboard a shift lead can read",
+      "scenario": "A shift lead needs to see backlog and exceptions at a glance, without asking an analyst.",
+      "input": "Mock servicing backlog and exception data by day and process.",
+      "aiDoes": "A one-page dashboard in Excel or the dashboard tool (to be confirmed); AI assistance suggests layout.",
+      "howTo": [
+        "Name the shift lead's decision.",
+        "Pick three to five measures for it.",
+        "Build the dashboard with the key measure first.",
+        "Test it with someone who has no briefing."
+      ],
+      "humanCheck": "Learner confirms each measure matches source data and the decision.",
+      "measure": "Questions a first-time reader asks before acting.",
+      "boundary": "Mock data only; the dashboard informs prioritisation, never individual performance decisions."
+    },
+    {
+      "id": "dc-learning-1",
+      "functionId": "learning",
+      "sessionKey": "S12",
+      "title": "Turning feedback scores into a narrative",
+      "scenario": "Training feedback scores rose, but the report lists numbers without saying what to do next.",
+      "input": "Mock aggregated session feedback scores and themed comments, anonymised.",
+      "aiDoes": "A short insight narrative: finding, evidence, caveat, recommendation, with AI assistance tightening wording.",
+      "howTo": [
+        "State the finding in one sentence.",
+        "Select two supporting figures and one caveat.",
+        "Ask AI assistance to tighten the draft.",
+        "Check every figure against the data."
+      ],
+      "humanCheck": "Learner confirms AI edits have not changed any meaning or figure.",
+      "measure": "Minutes from analysis to approved narrative.",
+      "boundary": "Aggregated mock feedback only; no named participants or trainers."
+    },
+    {
+      "id": "dc-audit-1",
+      "functionId": "audit",
+      "sessionKey": "S13",
+      "title": "Reviewing a sample analysis method",
+      "scenario": "An evidence sample total is right, but the method behind it would not survive review.",
+      "input": "Mock audit sample analysis with a deliberate method error.",
+      "aiDoes": "A peer review against a checklist; AI assistance suggests review questions.",
+      "howTo": [
+        "Agree a review checklist.",
+        "Ask AI assistance for review questions to add.",
+        "Review the analysis against the checklist.",
+        "Record issues and suggested corrections."
+      ],
+      "humanCheck": "Reviewer confirms each issue against the data before raising it.",
+      "measure": "Issues found per review; minutes per review.",
+      "boundary": "Mock analysis only; peer review is developmental, not an audit opinion."
+    },
+    {
+      "id": "dc-hr-2",
+      "functionId": "hr",
+      "sessionKey": "S14",
+      "title": "Spotting a data opportunity in onboarding",
+      "scenario": "Onboarding status sits in several trackers, so nobody sees overall progress.",
+      "input": "Description of current onboarding trackers and mock aggregated status counts.",
+      "aiDoes": "Three sized opportunity statements; AI assistance helps structure each one.",
+      "howTo": [
+        "List the trackers and who uses each.",
+        "Note where information is late or duplicated.",
+        "Draft three opportunities with AI assistance.",
+        "Size each by time, frequency and decision affected."
+      ],
+      "humanCheck": "Learner validates each opportunity's size against their own working knowledge.",
+      "measure": "Hours per week spent consolidating trackers.",
+      "boundary": "Aggregated or mock data only; no candidate or employee personal data."
+    },
+    {
+      "id": "dc-finance-2",
+      "functionId": "finance",
+      "sessionKey": "S15",
+      "title": "Preparing the manager conversation on MIS",
+      "scenario": "Two MIS improvement ideas compete. The manager must choose the one that matters most.",
+      "input": "One-page summaries of candidate opportunities, using mock figures.",
+      "aiDoes": "A prepared conversation brief with anticipated questions; AI assistance drafts likely challenges.",
+      "howTo": [
+        "Summarise each opportunity on one page.",
+        "Ask AI assistance for likely manager questions.",
+        "Prepare evidence-based answers.",
+        "Record the selected opportunity and success measure."
+      ],
+      "humanCheck": "Manager validates business value; learner confirms facts behind every answer.",
+      "measure": "Days from opportunity list to manager-validated selection.",
+      "boundary": "No confidential financial results in AI assistance; mock figures only."
+    },
+    {
+      "id": "dc-savings-2",
+      "functionId": "savings",
+      "sessionKey": "S16",
+      "title": "Building a safe mock savings dataset",
+      "scenario": "The real servicing file contains customer details, so a safe mock version is needed for analysis.",
+      "input": "Field list of a savings servicing extract, with no records.",
+      "aiDoes": "A mock dataset matching the real structure; AI assistance generates realistic synthetic values.",
+      "howTo": [
+        "List the fields the analysis needs.",
+        "Remove identifiers from the field list.",
+        "Ask AI assistance to generate synthetic records.",
+        "Record source, permissions and limits."
+      ],
+      "humanCheck": "Learner checks the mock contains no real values and mirrors real distributions sensibly.",
+      "measure": "Days to obtain a permission-cleared dataset.",
+      "boundary": "No real customer data in AI assistance; data owner confirms permissions."
+    },
+    {
+      "id": "dc-lending-2",
+      "functionId": "lending",
+      "sessionKey": "S17",
+      "title": "Making lending data analysis-ready",
+      "scenario": "The working dataset for a pipeline reporting problem needs cleaning and structuring before analysis.",
+      "input": "Permitted or mock application pipeline data for the learner's selected problem.",
+      "aiDoes": "An analysis-ready dataset with a documented routine; AI assistance reviews the step log.",
+      "howTo": [
+        "Profile the dataset for quality issues.",
+        "Apply cleaning and structuring steps.",
+        "Ask AI assistance to spot gaps in the log.",
+        "Review readiness with the mentor."
+      ],
+      "humanCheck": "Mentor and learner confirm readiness against the quality checklist.",
+      "measure": "Minutes to rerun the preparation routine.",
+      "boundary": "Permitted or mock data only; supports reporting, never credit decisions."
+    },
+    {
+      "id": "dc-quality-2",
+      "functionId": "quality",
+      "sessionKey": "S18",
+      "title": "Checking an error-rate analysis",
+      "scenario": "An analysis shows QC error rates falling, but sample sizes changed between periods.",
+      "input": "Mock QC results by month with varying sample sizes.",
+      "aiDoes": "An error-rate analysis checked for sample size and period effects; AI assistance proposes alternative explanations.",
+      "howTo": [
+        "Calculate error rate by month.",
+        "Compare sample sizes across months.",
+        "Ask AI assistance for alternative explanations.",
+        "Test each and record limits."
+      ],
+      "humanCheck": "Learner decides whether the trend holds before reporting it.",
+      "measure": "Checks run before the answer was relied on.",
+      "boundary": "Mock data only; results inform process improvement, not individual performance decisions."
+    },
+    {
+      "id": "dc-customer-insights-2",
+      "functionId": "customer-insights",
+      "sessionKey": "S19",
+      "title": "A weekly complaint-theme view",
+      "scenario": "Complaint themes are reported monthly, but service decisions are made weekly.",
+      "input": "Mock weekly complaint counts by theme and channel, aggregated.",
+      "aiDoes": "A weekly view in Excel or the dashboard tool (to be confirmed); AI assistance drafts the data note.",
+      "howTo": [
+        "Confirm the weekly decision and its owner.",
+        "Build the view with the key theme first.",
+        "Ask AI assistance to draft a data note.",
+        "Test with the intended user."
+      ],
+      "humanCheck": "Intended user confirms the view supports their weekly decision.",
+      "measure": "Days between data refresh and decision.",
+      "boundary": "Aggregated mock data only; no complaint text containing customer details."
+    },
+    {
+      "id": "dc-procurement-2",
+      "functionId": "procurement",
+      "sessionKey": "S20",
+      "title": "Estimating impact of a vendor-comparison view",
+      "scenario": "Vendor comparisons were assembled by hand. A prepared view could change how reviews run.",
+      "input": "Mock before-and-after process steps and time logs for a vendor review.",
+      "aiDoes": "An impact estimate with visible assumptions and a one-page enablement plan; AI assistance structures the page.",
+      "howTo": [
+        "Log old and new process steps and times.",
+        "State the impact estimate and assumptions.",
+        "Ask AI assistance to structure a one-page plan.",
+        "Review assumptions with the mentor."
+      ],
+      "humanCheck": "Learner checks every assumption is stated and evidenced.",
+      "measure": "Hours per vendor review, before and after.",
+      "boundary": "Mock vendor data only; no contract terms or pricing in AI assistance."
+    },
+    {
+      "id": "dc-risk-2",
+      "functionId": "risk",
+      "sessionKey": "S21",
+      "title": "Naming the risk in a risk dashboard",
+      "scenario": "A risk reporting dashboard is useful but exposes more detail than some viewers should see.",
+      "input": "Mock risk dashboard layout and its audience list.",
+      "aiDoes": "A named privacy or governance risk with mitigation; AI assistance suggests risks to consider.",
+      "howTo": [
+        "List the dashboard's data, outputs and audience.",
+        "Ask AI assistance for possible exposure risks.",
+        "Name the most material risk.",
+        "Define a mitigation with owner and check."
+      ],
+      "humanCheck": "Learner confirms the risk and mitigation against OSBI governance guidance.",
+      "measure": "Risks identified; mitigations with a named owner.",
+      "boundary": "Mock data only; analysis informs decisions, never automates them."
+    },
+    {
+      "id": "dc-accounts-2",
+      "functionId": "accounts",
+      "sessionKey": "S22",
+      "title": "Assembling a reconciliation improvement case",
+      "scenario": "Reconciliation analysis, impact estimate, plan and risk sit in separate files.",
+      "input": "The learner's own analysis, impact estimate, plan and risk note, using mock figures.",
+      "aiDoes": "One structured workplace case; AI assistance checks the storyline for gaps.",
+      "howTo": [
+        "Outline from question to decision.",
+        "Insert analysis, impact, plan and risk.",
+        "Ask AI assistance to find gaps in the storyline.",
+        "Trace every figure to the dataset."
+      ],
+      "humanCheck": "Learner confirms every figure and claim traces to evidence.",
+      "measure": "Figures in the case traced back to source.",
+      "boundary": "Mock or permitted figures only; no real account data in AI assistance."
+    },
+    {
+      "id": "dc-audit-2",
+      "functionId": "audit",
+      "sessionKey": "S23",
+      "title": "Testing a case like an auditor",
+      "scenario": "A capstone case reads well, but a reviewer asks how each claim is known.",
+      "input": "The learner's draft case, using permitted or mock data.",
+      "aiDoes": "An evidence trail for each claim; AI assistance drafts challenge questions an auditor might ask.",
+      "howTo": [
+        "List every claim in the case.",
+        "Link each claim to its evidence.",
+        "Ask AI assistance for auditor-style challenges.",
+        "Close gaps and record corrections."
+      ],
+      "humanCheck": "Mentor confirms gaps are closed with evidence, not wording.",
+      "measure": "Claims without evidence, before and after review.",
+      "boundary": "Permitted or mock data only; review is developmental, not an audit opinion."
+    },
+    {
+      "id": "dc-learning-2",
+      "functionId": "learning",
+      "sessionKey": "S24",
+      "title": "Rehearsing answers to panel questions",
+      "scenario": "A five-minute presentation must withstand questions on data, method and impact.",
+      "input": "The learner's reviewed case and presentation outline.",
+      "aiDoes": "A list of likely panel questions and rehearsed answers; AI assistance plays the challenger.",
+      "howTo": [
+        "Time a five-minute run-through.",
+        "Ask AI assistance for hard panel questions.",
+        "Draft and rehearse answers.",
+        "Tighten any answer that relies on assertion."
+      ],
+      "humanCheck": "Mentor judges whether answers rest on evidence.",
+      "measure": "Panel-style questions answered with evidence in rehearsal.",
+      "boundary": "No real customer or confidential data in AI assistance; panel review pending approval."
+    }
+  ]
+}

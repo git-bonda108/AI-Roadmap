@@ -1,0 +1,993 @@
+{
+  "pathway": "ai-practitioner",
+  "sessions": {
+    "S1": {
+      "concept": "Copilot predicts the next likely words from patterns and the context you give it. It does not look things up or know your work. You direct it and check it.",
+      "spark": { "useCaseId": "aic-operations-1", "hook": "A messy mock exception log becomes a clean summary. Is it understanding, or predicting from what we pasted?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "What a model, tokens and context are, shown through the exception log demo" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "First guided prompts on mock material from each learner's function; spotting limits" }
+      ],
+      "build": "Each learner runs three guided prompts on a mock document from their own function and notes where the output helped or slipped.",
+      "howTo": [
+        "Open Copilot Chat and paste a short mock or anonymised document.",
+        "Ask for a five-bullet summary for a named reader.",
+        "Remove half the text and ask again; compare the answers.",
+        "Mark anything the output states that the source does not contain."
+      ],
+      "reflect": [
+        "What surprised you about how Copilot produces an answer?",
+        "Where did the output sound confident but go beyond the source?",
+        "Which word now describes AI better for you: magic, threat, or predictor?"
+      ]
+    },
+    "S2": {
+      "concept": "The output is only as good as the instruction. Role, context, audience and format turn a generic answer into one you can use.",
+      "spark": { "useCaseId": "aic-hr-1", "hook": "Two prompts for the same job description: one vague, one precise. Spot the difference before we reveal it." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Vague versus precise asks; adding role, context, audience and format one at a time" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Live comparison exercises on a task from each learner's own function" }
+      ],
+      "build": "Learners write a vague and a precise prompt for one task in their function, run both, and record what changed.",
+      "howTo": [
+        "Write the task as you would say it aloud in one line.",
+        "Add who Copilot should act as and who will read it.",
+        "Add the context, the constraints and the format you want back.",
+        "Run both versions and note three differences side by side."
+      ],
+      "reflect": [
+        "Which single addition to your prompt changed the output most?",
+        "When output disappoints, do you now blame the tool or the instruction?",
+        "What will you add to every prompt from tomorrow?"
+      ]
+    },
+    "S3": {
+      "concept": "Safe use is part of the skill. Know which data is permitted, where output fails, and how to verify it before anyone relies on it.",
+      "spark": { "useCaseId": "aic-risk-1", "hook": "A risk register summary reads perfectly. One control owner and one rating are wrong. Can you find them?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Permitted work data, external tool boundaries, UK GDPR and Consumer Duty in practice" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Verification techniques, the readiness diagnostic and personal do and do-not lists" }
+      ],
+      "build": "Learners sort sample work items from their function into permitted, anonymise-first and never, then draft their personal do and do-not list.",
+      "howTo": [
+        "Before pasting, ask: is this customer-identifiable, confidential or unapproved?",
+        "Replace names, account numbers and addresses with neutral placeholders.",
+        "Ask Copilot to quote the source line behind each key claim.",
+        "Check every figure, name and date against the original yourself."
+      ],
+      "reflect": [
+        "Complete the mindset pulse: where do you stand on checking AI output?",
+        "Which item on your do-not list would you most likely have missed?",
+        "Who is accountable when AI output is wrong: the tool or you?"
+      ]
+    },
+    "SELF": {
+      "concept": "Consolidate the foundation at your own pace: how generative AI works, why instructions matter, and why governance shapes every use.",
+      "segments": [
+        { "label": "Self-paced", "mins": 60, "beats": [], "focus": "Curated reading and short videos on generative AI fundamentals, completed before Session 4" }
+      ],
+      "howTo": [
+        "Work through the curated reading and videos in the order given.",
+        "Note one idea that confirms and one that challenges your view.",
+        "Write three questions about using AI in your own role.",
+        "Bring your consolidated notes to Session 4."
+      ],
+      "reflect": [
+        "What do you now understand about AI that you did not three sessions ago?",
+        "Which fear or assumption about AI has shifted, and why?"
+      ]
+    },
+    "S4": {
+      "concept": "Copilot becomes useful when you bring it real, permitted tasks from your own role, try it, and judge the result honestly.",
+      "spark": { "useCaseId": "aic-lending-1", "hook": "Mock case notes become a structured credit memo draft. The underwriter still decides." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Trainer demonstration on document and email tasks drawn from learners' roles" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Learner practice on three permitted tasks; trainer observes and corrects" }
+      ],
+      "build": "Each learner picks three recurring document or email tasks from their role and builds a working prompt for each on permitted material.",
+      "howTo": [
+        "List three tasks you repeat weekly that involve drafting or summarising.",
+        "Prepare a permitted or mock version of the input for each.",
+        "Run a first prompt, then refine it at least twice.",
+        "Save the version that needed the least editing."
+      ],
+      "reflect": [
+        "How many attempts did your best prompt take, and what changed each time?",
+        "Which task surprised you by working well, or by not working?",
+        "What would you try differently if you started again?"
+      ]
+    },
+    "S5": {
+      "concept": "Notes, summaries and follow-ups can be drafted from pasted or exported meeting notes. Copilot here does not join or record meetings.",
+      "spark": { "useCaseId": "aic-savings-1", "hook": "Rough notes from a product meeting become a summary, action list and follow-up draft. Pasted, not recorded." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "From pasted notes to summary, decisions and actions; what Copilot Chat can and cannot see" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Drafting follow-ups and responses that hold up without heavy editing" }
+      ],
+      "build": "Learners take mock or anonymised meeting notes from their function and build a tested summary-and-follow-up workflow.",
+      "howTo": [
+        "Paste or upload your own typed or exported meeting notes.",
+        "Ask for decisions, actions with owners, and open questions separately.",
+        "Ask for a follow-up message in your team's usual tone.",
+        "Check every action and owner against your notes before sending."
+      ],
+      "reflect": [
+        "How much editing did the follow-up need, and why?",
+        "What did you add to your prompt to reduce that editing?",
+        "Where would you not trust a summary without rereading the notes?"
+      ]
+    },
+    "S6": {
+      "concept": "Structured prompts give predictable results. Role, context, constraints and an explicit output format are patterns you can repeat on purpose.",
+      "spark": { "useCaseId": "aic-finance-1", "hook": "Same mock variance table, two prompts. One returns prose; the other returns board-ready commentary in a fixed format." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "The four building blocks: role, context, constraints, output format" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Building and testing structured patterns on learners' own tasks" }
+      ],
+      "build": "Learners rebuild one of their S4 prompts into a structured pattern and test whether it gives consistent output across two inputs.",
+      "howTo": [
+        "Label four sections: Role, Context, Constraints, Output format.",
+        "State the format exactly: table columns, bullet count or word limit.",
+        "Add what to leave out, such as speculation or unstated figures.",
+        "Run the same pattern on two different inputs and compare."
+      ],
+      "reflect": [
+        "Did structure make the output more consistent across inputs?",
+        "Which constraint saved you the most editing?",
+        "Which pattern would you reuse tomorrow without changing it?"
+      ]
+    },
+    "S7": {
+      "concept": "A prompt that works once is personal; a template with clear placeholders and instructions is something the whole team can reuse.",
+      "spark": { "useCaseId": "aic-quality-1", "hook": "One analyst's QC summary prompt becomes a template anyone in the team can fill in and trust." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "What makes a prompt reusable: placeholders, instructions, examples and limits" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Turning working prompts into a personal template set and testing it with a peer" }
+      ],
+      "build": "Learners convert their best working prompts into templates with placeholders and usage notes, then a peer tests one cold.",
+      "howTo": [
+        "Replace task-specific details with bracketed placeholders, such as [period].",
+        "Add a one-line note on when to use and not use it.",
+        "Include the required checks the user must do on the output.",
+        "Ask a peer to run it without help and note confusion."
+      ],
+      "reflect": [
+        "What did your peer misunderstand in your template?",
+        "Which of your prompts is ready for someone else to use?",
+        "How does writing for others change how you write prompts?"
+      ]
+    },
+    "S8": {
+      "concept": "Copilot can extract, compare and summarise across long or messy documents, provided you set the questions and check against the source.",
+      "spark": { "useCaseId": "aic-procurement-1", "hook": "Three long mock vendor responses, one requirement list. A comparison table appears; which cells would you check?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Extraction and comparison techniques; working within upload and length limits" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Building two research workflows on long permitted documents from learners' functions" }
+      ],
+      "build": "Learners build two research workflows, one extraction and one comparison, on long permitted or mock documents from their function.",
+      "howTo": [
+        "Upload the documents, or paste long text in labelled sections.",
+        "Give a fixed list of questions or criteria to extract against.",
+        "Ask for a table with a source reference per cell.",
+        "Spot-check at least three cells against the original document."
+      ],
+      "reflect": [
+        "Where did the extraction miss or merge information?",
+        "How did giving fixed criteria change the quality of the comparison?",
+        "Which long-document task will you test again this week?"
+      ]
+    },
+    "S9": {
+      "concept": "Notes and data become useful when turned into structured output: tables, comparisons and action lists someone can act on.",
+      "spark": { "useCaseId": "aic-customer-insights-1", "hook": "Two hundred mock survey comments become a theme table with examples and suggested actions." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "From unstructured notes and data to tables, comparisons and action lists" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Building and testing one reporting workflow in each learner's function" }
+      ],
+      "build": "Learners build one reporting workflow that turns their function's notes or data into a structured table and action list.",
+      "howTo": [
+        "Paste anonymised notes or data with a short description of each column.",
+        "Specify the table structure and the order of rows.",
+        "Ask for actions only where the data supports them.",
+        "Recount at least one figure or theme by hand."
+      ],
+      "reflect": [
+        "Did the structure reveal anything the raw notes hid?",
+        "Which part of the report still needs your judgement?",
+        "How would you improve the prompt for next month's run?"
+      ]
+    },
+    "S10": {
+      "concept": "Redesigning a task means mapping every step first, then deciding which steps AI drafts, which a human does, and where checks sit.",
+      "spark": { "useCaseId": "aic-accounts-1", "hook": "A month-end reconciliation note, mapped step by step. Where does AI help, and where must it not?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Mapping a full task: inputs, steps, handoffs, checks and outputs" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Designing the AI-assisted version with human review points marked" }
+      ],
+      "build": "Learners map one full task from their role and design its AI-assisted version, marking AI steps, human steps and checkpoints.",
+      "howTo": [
+        "List every step of the task today, including handoffs and checks.",
+        "Mark each step: AI drafts, human does, or human checks.",
+        "Write the prompt or template for each AI step.",
+        "Confirm every AI output passes a named human check."
+      ],
+      "reflect": [
+        "Which step did you assume AI could do but decided it should not?",
+        "Where did mapping reveal waste you had not noticed?",
+        "How many separate prompts did one task really need?"
+      ]
+    },
+    "S11": {
+      "concept": "A redesign is only real once it runs end to end on realistic input and you can show the before and after.",
+      "spark": { "useCaseId": "aic-audit-1", "hook": "A first-cut audit programme built end to end from a mock process note, then checked by the auditor." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Running the redesigned task end to end with the trainer" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Fixing weak steps and documenting the before and after" }
+      ],
+      "build": "Learners run their S10 redesign end to end on permitted or mock input, fix weak steps, and document the before and after.",
+      "howTo": [
+        "Run each AI step in order, passing outputs forward by paste.",
+        "Note where you had to edit heavily or start again.",
+        "Rework the weakest prompt and rerun that step.",
+        "Record time and edits for the old and new versions."
+      ],
+      "reflect": [
+        "Which step broke first, and what did you change?",
+        "Is the redesigned version genuinely better, or only different?",
+        "What would a colleague need to run this without you?"
+      ]
+    },
+    "S12": {
+      "concept": "Prompts improve fastest under another person's eyes. Reviewing and being reviewed builds the judgement to iterate deliberately.",
+      "spark": { "useCaseId": "aic-learning-1", "hook": "A feedback-summary prompt, reviewed by a peer, rewritten, rerun. Compare the two outputs side by side." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "A simple review checklist; breakout practice reviewing each other's prompts" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Improving prompts after review and retesting on permitted workplace examples" }
+      ],
+      "build": "In breakouts, learners exchange two prompts, review them against the checklist, then improve and retest their own on permitted examples.",
+      "howTo": [
+        "Swap one prompt and its sample input with a partner.",
+        "Check role, context, constraints, format and data safety.",
+        "Suggest one change that would most improve the output.",
+        "Apply the feedback, rerun, and compare both outputs."
+      ],
+      "reflect": [
+        "What did your reviewer see that you could not?",
+        "Which feedback point will you apply to all your prompts?",
+        "How comfortable are you now critiquing someone else's prompt?"
+      ]
+    },
+    "S13": {
+      "concept": "AI output fails in predictable ways: invented detail, dropped items, wrong figures, overconfidence. Catching them, or not using AI, is the skill.",
+      "spark": { "useCaseId": "aic-operations-2", "hook": "A shift handover summary drops one exception and invents a figure. How quickly can the room find both?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Common failure modes, how to spot them, and tasks unsuited to AI" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Building and testing a personal verification checklist on learners' own outputs" }
+      ],
+      "build": "Learners audit three of their own earlier outputs for failure modes and turn what they find into a personal verification checklist.",
+      "howTo": [
+        "Count items in the source and the output; confirm they match.",
+        "Trace every figure, name and date back to the source.",
+        "Ask Copilot what it was unsure about, then check those points.",
+        "Decide when the task is unsuitable for AI and note why."
+      ],
+      "reflect": [
+        "Which failure mode did you find most often in your own outputs?",
+        "Name one task in your role where you would not use AI.",
+        "How has your habit of checking output changed since Stage 1?"
+      ]
+    },
+    "CLINIC": {
+      "concept": "Clear what is blocking your practice before the applied stage, with the trainer and peers working through real problems.",
+      "segments": [
+        { "label": "Single block", "mins": 60, "beats": ["build", "reflect"], "focus": "Learners bring blockers from their own practice and work them through with the trainer" }
+      ],
+      "build": "Each learner brings one blocker, such as a prompt that will not hold or a data question, and works it through live.",
+      "howTo": [
+        "State your blocker in one sentence with an example.",
+        "Show the prompt, the input type and the output you got.",
+        "Try the trainer's suggested fix live and compare.",
+        "Note any governance question to raise with the right OSBI contact."
+      ],
+      "reflect": [
+        "Complete the mindset pulse: how has your use of AI changed so far?",
+        "Is your blocker cleared, and what will you try next?",
+        "Which workflow in your team are you ready to redesign?"
+      ]
+    },
+    "S14": {
+      "concept": "Look at your workflows, not single prompts. Find at least three places where AI could change how work runs, and size each.",
+      "spark": { "useCaseId": "aic-hr-2", "hook": "An onboarding checklist that takes hours to tailor per role. Is this a use case, and what is it worth?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Spotting candidate use cases: repeated, text-heavy, reviewable, permitted data" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Sizing value: frequency, effort, quality and risk for each candidate" }
+      ],
+      "build": "Learners list at least three candidate use cases from their own workflow and size each by frequency, effort, quality and risk.",
+      "howTo": [
+        "List tasks you repeat that involve drafting, summarising or comparing.",
+        "Filter out any needing customer-identifiable data or AI decisions.",
+        "For each, estimate frequency and current effort per occurrence.",
+        "Ask Copilot to challenge your sizing, then decide yourself."
+      ],
+      "reflect": [
+        "Which candidate would change how your team works, not just you?",
+        "Which did you drop, and what boundary ruled it out?",
+        "Are you thinking about tasks or about workflows now?"
+      ]
+    },
+    "S15": {
+      "concept": "A use case earns its place when your reporting manager agrees it matters. Prepare the case, have the conversation, choose one.",
+      "spark": { "useCaseId": "aic-finance-2", "hook": "A one-page brief that turns an MIS summary idea into a five-minute manager conversation." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Preparing the manager brief: problem, value, risk and ask" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Rehearsing the conversation, then selecting one use case for validation" }
+      ],
+      "build": "Learners draft a one-page brief on their three candidates, rehearse the manager conversation in pairs, and select one use case.",
+      "howTo": [
+        "Paste your three sized candidates into Copilot Chat.",
+        "Ask for a one-page brief: problem, value, risk, ask.",
+        "Ask for three questions your manager is likely to raise.",
+        "Rewrite the brief in your own words before the meeting."
+      ],
+      "reflect": [
+        "What did your manager value that you had underplayed?",
+        "Why is your selected use case worth redesigning the workflow for?",
+        "What evidence will you need to prove it worked?"
+      ]
+    },
+    "S16": {
+      "concept": "A designed workflow has clear steps, inputs, prompts, human checks and an owner, so it runs the same way every time.",
+      "spark": { "useCaseId": "aic-savings-2", "hook": "A product terms change triggers an FAQ refresh. Watch it designed as a repeatable, checked workflow." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Workflow anatomy: trigger, inputs, AI steps, human checks, outputs, owner" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Designing each learner's selected use case as a step-by-step workflow" }
+      ],
+      "build": "Learners design their selected use case as a step-by-step workflow with inputs, prompts, human checks and an owner for each step.",
+      "howTo": [
+        "Name the trigger that starts the workflow and the final output.",
+        "Write each step as input, action, output and owner.",
+        "Attach a prompt or template to every AI step.",
+        "Place a named human check before anything leaves the team."
+      ],
+      "reflect": [
+        "How does the designed workflow differ from how the task runs today?",
+        "Which human check is most important, and who owns it?",
+        "Could a colleague run this workflow from your design alone?"
+      ]
+    },
+    "S17": {
+      "concept": "Build the designed workflow and test it against real, permitted work. Design survives contact with live tasks only after iteration.",
+      "spark": { "useCaseId": "aic-procurement-2", "hook": "A vendor comparison workflow, tested on approved live responses. What broke on real documents that worked on mock ones?" },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Building the workflow's prompts and templates with mentor input" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Testing against permitted live work and recording what needed fixing" }
+      ],
+      "build": "Learners build their workflow's prompts and templates, test them on permitted live work with mentor input, and log every fix.",
+      "howTo": [
+        "Build each step's prompt from your S16 design.",
+        "Test on permitted live input, or approved anonymised versions.",
+        "Log each failure, its cause and the fix you made.",
+        "Rerun the full workflow once all fixes are in."
+      ],
+      "reflect": [
+        "What did live work expose that mock data did not?",
+        "Is the workflow now reliable enough for daily use?",
+        "Which fix would matter most to a colleague adopting it?"
+      ]
+    },
+    "S18": {
+      "concept": "You cannot prove an improvement without knowing the starting point. Measure how the task runs today, honestly, before changing it.",
+      "spark": { "useCaseId": "aic-accounts-2", "hook": "How long does a journal narrative really take today? Timing it honestly is the first step of proof." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Choosing baseline measures: time, edits, errors, rework, turnaround" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Setting up and documenting each learner's baseline method and first readings" }
+      ],
+      "build": "Learners choose two or three baseline measures for their task and document how it runs today, with first readings.",
+      "howTo": [
+        "Pick measures you can collect reliably: minutes, edits, errors, rework.",
+        "Time the current task on several real occurrences, not one.",
+        "Record conditions: input size, complexity, interruptions.",
+        "Write the baseline in a simple table your manager can read."
+      ],
+      "reflect": [
+        "Did the real baseline differ from what you assumed?",
+        "Which measure will matter most to your manager?",
+        "How confident are you that the baseline is fair?"
+      ]
+    },
+    "S19": {
+      "concept": "Compare after with before on the same measures. Estimate time, cost, quality or decision impact, and state the limits honestly.",
+      "spark": { "useCaseId": "aic-quality-2", "hook": "Quality report summaries, before and after: minutes, rework and reviewer edits on the same measures." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Measuring the redesigned task on the baseline measures" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Building the before-and-after comparison and stating its limits" }
+      ],
+      "build": "Learners measure their redesigned workflow on the S18 measures and build a before-and-after comparison with their own numbers.",
+      "howTo": [
+        "Run the new workflow on comparable occurrences to the baseline.",
+        "Include review and correction time in the after figures.",
+        "Put before and after side by side for each measure.",
+        "Note sample size and anything that limits the comparison."
+      ],
+      "reflect": [
+        "Does the evidence support the improvement you expected?",
+        "Which result would you be cautious about claiming, and why?",
+        "Has measuring changed how you think about the workflow?"
+      ]
+    },
+    "S20": {
+      "concept": "A workflow that only you use is a personal habit. A one-page adoption plan turns it into something peers and teams can pick up.",
+      "spark": { "useCaseId": "aic-learning-2", "hook": "A tested workflow becomes a one-page quick guide a peer can follow on day one." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Who adopts first, what they need, and what gets in the way" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Writing and peer-testing the one-page adoption plan" }
+      ],
+      "build": "Learners write a one-page adoption plan for spreading their workflow to peers, including a quick guide and support steps.",
+      "howTo": [
+        "Name the first peers or teams who could use the workflow.",
+        "List what they need: template, guide, example, checks.",
+        "Ask Copilot to draft a quick guide from your workflow design.",
+        "Test the guide with one peer and revise it."
+      ],
+      "reflect": [
+        "Who in your team will adopt this first, and why them?",
+        "What barrier to adoption are you most worried about?",
+        "What would make a colleague choose to keep using it?"
+      ]
+    },
+    "S21": {
+      "concept": "Every workflow carries risk. Name the responsible AI or data privacy risk in yours and define a practical mitigation someone will follow.",
+      "spark": { "useCaseId": "aic-risk-2", "hook": "A control narrative for an AI-assisted workflow: the risk, the control, the owner, the evidence." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Identifying responsible AI and data privacy risks in each learner's workflow" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Defining practical mitigations, owners and evidence" }
+      ],
+      "build": "Learners name the main responsible AI or data privacy risk in their workflow and write its mitigation, owner and evidence.",
+      "howTo": [
+        "Walk your workflow step by step asking what could go wrong.",
+        "Pick the risk with the worst realistic consequence.",
+        "Write the control as a specific action with a named owner.",
+        "State what evidence shows the control is working."
+      ],
+      "reflect": [
+        "Complete the mindset pulse: how has your view of AI risk changed?",
+        "Would your mitigation still work if a peer ran the workflow?",
+        "What risk would you warn every new adopter about?"
+      ]
+    },
+    "INDEP": {
+      "concept": "Run your workflow on live, permitted work between sessions and capture the evidence that will make your case.",
+      "segments": [
+        { "label": "Independent", "mins": 240, "beats": [], "focus": "Running the workflow on live work and producing progress artifacts across Stage 3" }
+      ],
+      "howTo": [
+        "Run the workflow on permitted live tasks as they arise.",
+        "Log time, edits and issues each time you run it.",
+        "Save before-and-after examples, anonymised where needed.",
+        "Bring your log and artifacts to the next mentor session."
+      ],
+      "reflect": [
+        "Is the workflow becoming your default way of doing the task?",
+        "What evidence from live use surprised you?"
+      ]
+    },
+    "S22": {
+      "concept": "A workplace case brings evidence, the before and after, the adoption plan and the risk together into one argument others can act on.",
+      "spark": { "useCaseId": "aic-customer-insights-2", "hook": "Scattered findings become one insight report with a clear storyline. The same discipline builds your case." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Case structure: problem, workflow, evidence, adoption plan, risk, ask" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Assembling each learner's complete workplace AI adoption case" }
+      ],
+      "build": "Learners assemble their stage outputs into one complete workplace AI adoption case with a clear storyline and evidence for each claim.",
+      "howTo": [
+        "Gather your baseline, comparison, adoption plan and risk outputs.",
+        "Ask Copilot to propose a storyline outline from your materials.",
+        "Link every claim to a piece of your own evidence.",
+        "Rewrite the summary yourself so it sounds like you."
+      ],
+      "reflect": [
+        "Could someone outside your team follow and act on your case?",
+        "Which claim is your strongest, and which needs more evidence?",
+        "How will this case help others adopt the workflow?"
+      ]
+    },
+    "S23": {
+      "concept": "A strong case survives scrutiny. Mentor review finds the gaps; you close them and tighten every piece of evidence.",
+      "spark": { "useCaseId": "aic-audit-2", "hook": "An auditor's eye on a case: every claim tested against its evidence. Apply it to your own." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Mentor review of the full case against evidence and clarity criteria" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Closing gaps and tightening evidence for a reviewed, corrected case" }
+      ],
+      "build": "Learners act on mentor review: close evidence gaps, correct overstated claims, and produce a reviewed, corrected case.",
+      "howTo": [
+        "List each claim in your case with its supporting evidence.",
+        "Ask Copilot to flag claims that lack clear support.",
+        "Decide yourself whether to add evidence or soften the claim.",
+        "Record every change made after mentor review."
+      ],
+      "reflect": [
+        "Which gap would a sceptical reader have found first?",
+        "Is your case now honest about its limits?",
+        "What have you learnt about proving value, not just claiming it?"
+      ]
+    },
+    "S24": {
+      "concept": "Practitioners can defend their case. Rehearse the five-minute presentation and prepare for the hard questions, if the panel is approved.",
+      "spark": { "useCaseId": "aic-lending-2", "hook": "A loan policy change briefing, stress-tested by likely reviewer questions before it reaches committee." },
+      "segments": [
+        { "label": "Segment 1", "mins": 90, "beats": ["spark", "build"], "focus": "Shaping the five-minute presentation and anticipating panel questions" },
+        { "label": "Break", "mins": 15 },
+        { "label": "Segment 2", "mins": 90, "beats": ["build", "reflect"], "focus": "Timed rehearsals with peer and mentor challenge, then final adjustments" }
+      ],
+      "build": "Learners rehearse their five-minute case, use Copilot to anticipate tough questions, and practise answers under peer challenge.",
+      "howTo": [
+        "Cut your case to five minutes: problem, change, evidence, spread, risk.",
+        "Ask Copilot for the ten hardest questions a sceptical reviewer would ask.",
+        "Prepare short evidence-based answers in your own words.",
+        "Rehearse aloud with a timer and a peer challenging you."
+      ],
+      "reflect": [
+        "Complete the mindset pulse: how have you changed since Session 1?",
+        "Which question would you least like to be asked, and why?",
+        "Who will you help adopt AI well in the next month?"
+      ]
+    }
+  },
+  "useCases": [
+    {
+      "id": "aic-operations-1",
+      "functionId": "operations",
+      "sessionKey": "S1",
+      "title": "Exception log to structured summary",
+      "scenario": "A servicing team ends the day with a long, inconsistent exception log that the next shift must understand quickly.",
+      "input": "A mock exception log with case references replaced by placeholders, pasted as text.",
+      "aiDoes": "Groups exceptions by type, lists open items and suggested next steps in a short structured summary.",
+      "howTo": [
+        "Paste the mock exception log into Copilot Chat.",
+        "Ask for exceptions grouped by type with counts.",
+        "Ask for open items and next steps as a table.",
+        "Compare counts in the summary with the original log."
+      ],
+      "humanCheck": "The team member checks counts, categories and open items against the log before handover.",
+      "measure": "Minutes to produce the handover summary; exceptions missed or miscounted.",
+      "boundary": "Mock or anonymised logs only; no customer details pasted. AI summarises; people decide actions."
+    },
+    {
+      "id": "aic-hr-1",
+      "functionId": "hr",
+      "sessionKey": "S2",
+      "title": "Vague versus precise job description prompt",
+      "scenario": "HR needs a first draft job description for an operations analyst role and tries a one-line prompt first.",
+      "input": "A mock role brief: responsibilities, required skills, team context and house style notes.",
+      "aiDoes": "Produces two drafts, one from a vague prompt and one from a precise prompt, for side-by-side comparison.",
+      "howTo": [
+        "Prompt once: write a job description for an operations analyst.",
+        "Prompt again with role, audience, mock brief and required format.",
+        "Compare both drafts for relevance, tone and missing content.",
+        "List which prompt elements caused each improvement."
+      ],
+      "humanCheck": "HR checks accuracy, inclusive language and policy fit before any draft is used.",
+      "measure": "Edits needed per draft to reach a usable job description.",
+      "boundary": "Mock role brief only. AI drafts content; it does not screen, rank or select candidates."
+    },
+    {
+      "id": "aic-risk-1",
+      "functionId": "risk",
+      "sessionKey": "S3",
+      "title": "Verifying a risk register summary",
+      "scenario": "Risk needs a short summary of register movements for a committee pack, and the draft must be accurate.",
+      "input": "A mock risk register extract with risks, ratings, owners and control status, uploaded as a file.",
+      "aiDoes": "Summarises key movements and high-rated risks, citing the register row behind each statement.",
+      "howTo": [
+        "Upload the mock register extract to Copilot Chat.",
+        "Ask for a summary of rating changes and high risks.",
+        "Ask it to cite the row behind each statement.",
+        "Check every rating and owner against the register."
+      ],
+      "humanCheck": "The risk analyst verifies every rating, owner and movement against the register before use.",
+      "measure": "Errors found per summary; minutes to verify the draft.",
+      "boundary": "Mock or approved data only; no confidential register uploaded without approval. Ratings stay human judgements."
+    },
+    {
+      "id": "aic-lending-1",
+      "functionId": "lending",
+      "sessionKey": "S4",
+      "title": "Structuring a credit memo draft",
+      "scenario": "An underwriting support colleague turns scattered case notes into the standard credit memo structure before underwriter review.",
+      "input": "Mock case notes and the blank credit memo section headings, pasted as text.",
+      "aiDoes": "Arranges the notes under each memo heading, flags missing information and lists questions for the underwriter.",
+      "howTo": [
+        "Paste the memo headings, then the mock case notes.",
+        "Ask it to place notes under headings without adding facts.",
+        "Ask for a list of missing information per section.",
+        "Check nothing was added beyond the notes."
+      ],
+      "humanCheck": "The underwriter reviews the structured draft and makes every credit judgement and decision.",
+      "measure": "Minutes to structure the memo draft; gaps flagged versus found later.",
+      "boundary": "Mock notes only; no customer-identifiable data. AI structures text and never recommends or makes credit decisions."
+    },
+    {
+      "id": "aic-savings-1",
+      "functionId": "savings",
+      "sessionKey": "S5",
+      "title": "Meeting notes to actions and follow-up",
+      "scenario": "After a savings product meeting, a colleague must circulate decisions, actions and a follow-up message the same day.",
+      "input": "Typed or exported mock meeting notes, pasted as text. Copilot Chat does not join or record meetings.",
+      "aiDoes": "Drafts a summary of decisions, an action list with owners and dates, and a short follow-up message.",
+      "howTo": [
+        "Paste your typed or exported meeting notes.",
+        "Ask for decisions, actions with owners, and open questions.",
+        "Ask for a follow-up message in a plain, professional tone.",
+        "Check each action and owner against your notes."
+      ],
+      "humanCheck": "The note-taker confirms decisions, owners and dates with the notes before sending the follow-up.",
+      "measure": "Minutes from meeting end to follow-up sent; edits made before sending.",
+      "boundary": "Pasted or exported notes only; no Teams or Outlook integration. No customer data in notes."
+    },
+    {
+      "id": "aic-finance-1",
+      "functionId": "finance",
+      "sessionKey": "S6",
+      "title": "Structured variance commentary",
+      "scenario": "Finance writes monthly variance commentary on an MIS table and wants consistent format and tone each month.",
+      "input": "A mock MIS variance table with actuals, budget and variances, pasted as text.",
+      "aiDoes": "Drafts variance commentary in a fixed format: line item, variance, likely driver to confirm, and follow-up question.",
+      "howTo": [
+        "Set the role: finance analyst writing for senior management.",
+        "Paste the mock variance table with column definitions.",
+        "Constrain it: only material variances, no invented drivers.",
+        "Specify the output as a four-column table."
+      ],
+      "humanCheck": "The finance analyst confirms every figure and replaces suggested drivers with confirmed explanations.",
+      "measure": "Minutes to first-draft commentary; edits needed to reach review standard.",
+      "boundary": "Mock or approved figures only. AI drafts wording; drivers and figures are confirmed by finance."
+    },
+    {
+      "id": "aic-quality-1",
+      "functionId": "quality",
+      "sessionKey": "S7",
+      "title": "Reusable QC summary template",
+      "scenario": "Quality analysts each summarise sampling results differently; the team wants one template everyone can reuse.",
+      "input": "Mock quality-check sampling results and a working prompt from one analyst.",
+      "aiDoes": "Produces a consistent summary of sample size, pass rate, error themes and suggested SOP points to review.",
+      "howTo": [
+        "Take the working prompt and mark the task-specific details.",
+        "Replace them with placeholders such as [sample period].",
+        "Add usage notes and the checks the user must do.",
+        "Have another analyst run it on different mock results."
+      ],
+      "humanCheck": "The quality analyst checks rates and themes against sampling records before the summary is shared.",
+      "measure": "Minutes per summary; variation in format between analysts.",
+      "boundary": "Mock or anonymised sampling data only. AI summarises; quality judgements stay with analysts."
+    },
+    {
+      "id": "aic-procurement-1",
+      "functionId": "procurement",
+      "sessionKey": "S8",
+      "title": "Comparing long vendor responses",
+      "scenario": "Procurement must compare three lengthy RFP responses against a requirement list before a shortlist discussion.",
+      "input": "Three mock vendor responses and a requirement list, uploaded as files.",
+      "aiDoes": "Extracts each vendor's response per requirement into a comparison table with section references and gaps flagged.",
+      "howTo": [
+        "Upload the requirement list and the three mock responses.",
+        "Ask for a table: requirement, vendor responses, source section.",
+        "Ask it to flag requirements a vendor did not address.",
+        "Spot-check several cells against the original responses."
+      ],
+      "humanCheck": "The procurement lead verifies key cells against source documents; the evaluation panel makes the selection.",
+      "measure": "Minutes to build the comparison table; cells found incorrect on spot-check.",
+      "boundary": "Mock or approved documents only. AI extracts and compares; it does not score or select vendors."
+    },
+    {
+      "id": "aic-customer-insights-1",
+      "functionId": "customer-insights",
+      "sessionKey": "S9",
+      "title": "Survey comments to theme report",
+      "scenario": "Customer Insights receives hundreds of free-text survey comments and must report themes and actions to stakeholders.",
+      "input": "Mock or anonymised survey comments with no customer identifiers, pasted or uploaded.",
+      "aiDoes": "Groups comments into themes with approximate counts, example quotes and suggested actions in a table.",
+      "howTo": [
+        "Paste or upload the anonymised comments.",
+        "Ask for themes with counts and two example comments each.",
+        "Ask for suggested actions only where comments support them.",
+        "Recount one theme by hand to check accuracy."
+      ],
+      "humanCheck": "The insights analyst checks theme counts and quotes, and owns the conclusions shared.",
+      "measure": "Minutes to produce the theme table; themes merged or missed on review.",
+      "boundary": "Anonymised or mock comments only; strip names and account details before pasting."
+    },
+    {
+      "id": "aic-accounts-1",
+      "functionId": "accounts",
+      "sessionKey": "S10",
+      "title": "Mapping the reconciliation note task",
+      "scenario": "At month-end, accounts colleagues write reconciliation notes explaining breaks; the task is mapped before redesign.",
+      "input": "A mock reconciliation summary with breaks and the current step-by-step process, pasted as text.",
+      "aiDoes": "Helps list process steps and drafts a reconciliation note explaining each break from the supplied facts.",
+      "howTo": [
+        "Paste your current process steps and ask for gaps.",
+        "Mark each step: AI drafts, human does, human checks.",
+        "Paste the mock break details and ask for a draft note.",
+        "Check each explanation against the reconciliation data."
+      ],
+      "humanCheck": "The accountant confirms every break explanation and figure before the note is filed.",
+      "measure": "Minutes per reconciliation note; steps removed or merged in the redesign.",
+      "boundary": "Mock or approved figures only. AI drafts narrative; reconciliation and sign-off stay human."
+    },
+    {
+      "id": "aic-audit-1",
+      "functionId": "audit",
+      "sessionKey": "S11",
+      "title": "First-cut audit programme, end to end",
+      "scenario": "An auditor prepares a first-cut audit programme for a process review, using the redesigned AI-assisted steps.",
+      "input": "A mock process description and a list of key risks, pasted or uploaded.",
+      "aiDoes": "Drafts objectives, risks, test steps and evidence requests as a structured first-cut audit programme.",
+      "howTo": [
+        "Paste the mock process description and key risks.",
+        "Ask for objectives and test steps linked to each risk.",
+        "Ask for evidence requests per test step.",
+        "Compare with your usual programme and note the differences."
+      ],
+      "humanCheck": "The auditor reviews scope, tests and evidence requests; the audit lead approves the programme.",
+      "measure": "Minutes to first-cut programme; test steps added or removed in review.",
+      "boundary": "Mock or approved process material only. AI drafts; audit scope and conclusions are human."
+    },
+    {
+      "id": "aic-learning-1",
+      "functionId": "learning",
+      "sessionKey": "S12",
+      "title": "Peer-reviewed feedback summary prompt",
+      "scenario": "A learning colleague's prompt for summarising training feedback is reviewed and improved by a peer.",
+      "input": "Mock session feedback forms, anonymised, and the colleague's original prompt.",
+      "aiDoes": "Summarises feedback into strengths, improvement areas and suggested content changes, before and after the prompt is improved.",
+      "howTo": [
+        "Run the original prompt on the mock feedback.",
+        "Peer reviews the prompt against the review checklist.",
+        "Apply the suggested change and rerun on the same feedback.",
+        "Compare the two summaries side by side."
+      ],
+      "humanCheck": "The learning colleague checks the summary reflects the feedback before acting on it.",
+      "measure": "Edits needed per summary, before and after peer review.",
+      "boundary": "Anonymised or mock feedback only; no participant names pasted. AI summarises; people decide changes."
+    },
+    {
+      "id": "aic-operations-2",
+      "functionId": "operations",
+      "sessionKey": "S13",
+      "title": "Catching errors in a handover summary",
+      "scenario": "A shift handover summary looks complete, but one exception is missing and a figure does not match the log.",
+      "input": "A mock exception log and its AI-generated handover summary containing planted errors.",
+      "aiDoes": "Produces the handover summary; then, when asked, lists points where it was uncertain or inferred.",
+      "howTo": [
+        "Count exceptions in the log and in the summary.",
+        "Trace each figure in the summary to the log.",
+        "Ask Copilot which statements were inferred, not stated.",
+        "Record each error type on your verification checklist."
+      ],
+      "humanCheck": "The handing-over colleague reconciles the summary to the log before the next shift relies on it.",
+      "measure": "Errors caught per summary; minutes spent verifying.",
+      "boundary": "Mock logs only. Never pass on an AI summary without checking it against the source."
+    },
+    {
+      "id": "aic-hr-2",
+      "functionId": "hr",
+      "sessionKey": "S14",
+      "title": "Sizing an onboarding checklist use case",
+      "scenario": "HR tailors onboarding checklists by role by hand; is AI drafting worth pursuing, and how valuable is it?",
+      "input": "A mock generic onboarding checklist and a short mock role profile.",
+      "aiDoes": "Drafts a role-tailored onboarding checklist and helps list the factors for sizing the use case.",
+      "howTo": [
+        "Paste the generic checklist and the mock role profile.",
+        "Ask for a tailored checklist with week-by-week steps.",
+        "Note how often this task occurs and its current effort.",
+        "Ask Copilot to challenge your sizing assumptions."
+      ],
+      "humanCheck": "HR checks the checklist against policy and the hiring manager confirms role-specific steps.",
+      "measure": "Checklists tailored per month; minutes per checklist today.",
+      "boundary": "Mock profiles only; no new joiner personal data. AI drafts; HR owns onboarding decisions."
+    },
+    {
+      "id": "aic-finance-2",
+      "functionId": "finance",
+      "sessionKey": "S15",
+      "title": "Manager brief for an MIS summary idea",
+      "scenario": "A finance colleague wants manager backing to redesign how monthly MIS summaries are drafted.",
+      "input": "The colleague's own notes on the problem, effort today and proposed change.",
+      "aiDoes": "Drafts a one-page brief covering problem, value, risk and ask, plus likely manager questions.",
+      "howTo": [
+        "Paste your notes on the problem and current effort.",
+        "Ask for a one-page brief: problem, value, risk, ask.",
+        "Ask for three questions your manager will likely raise.",
+        "Rewrite the brief in your own words."
+      ],
+      "humanCheck": "The colleague checks every claim is accurate; the reporting manager validates the use case.",
+      "measure": "Minutes to prepare the brief; manager questions anticipated versus asked.",
+      "boundary": "No confidential figures needed in the brief. AI drafts; the manager validates and decides."
+    },
+    {
+      "id": "aic-savings-2",
+      "functionId": "savings",
+      "sessionKey": "S16",
+      "title": "Designing an FAQ refresh workflow",
+      "scenario": "When savings product terms change, the FAQs must be updated consistently, clearly and with compliance review.",
+      "input": "Mock old and new product terms summaries and the current mock FAQ set.",
+      "aiDoes": "Identifies FAQs affected by the change and drafts updated answers in plain English for review.",
+      "howTo": [
+        "Paste the old terms, the new terms and current FAQs.",
+        "Ask which FAQs are affected by each change.",
+        "Ask for redrafted answers in plain, customer-friendly English.",
+        "Route drafts to the named reviewer before publishing."
+      ],
+      "humanCheck": "The product owner checks accuracy; compliance reviews clarity and fairness under Consumer Duty before publishing.",
+      "measure": "Minutes from terms change to FAQ drafts ready; FAQs missed.",
+      "boundary": "Mock or approved product documents only. Nothing reaches customers without human and compliance review."
+    },
+    {
+      "id": "aic-procurement-2",
+      "functionId": "procurement",
+      "sessionKey": "S17",
+      "title": "Testing a vendor comparison workflow",
+      "scenario": "The vendor comparison workflow designed on mock data is now tested on approved, real RFP responses.",
+      "input": "Approved RFP responses with confidential pricing removed, and the requirement list, uploaded.",
+      "aiDoes": "Runs the comparison steps: extraction per requirement, gap flags and a neutral summary table.",
+      "howTo": [
+        "Confirm the documents are approved for use in Copilot Chat.",
+        "Run each workflow step with your saved prompts.",
+        "Log where outputs failed on real documents.",
+        "Fix the prompt and rerun the failed step."
+      ],
+      "humanCheck": "The procurement lead verifies extractions; the evaluation panel scores and selects vendors.",
+      "measure": "Fixes needed per run; minutes per comparison.",
+      "boundary": "Approved documents only; remove confidential terms if not permitted. AI never scores or selects vendors."
+    },
+    {
+      "id": "aic-accounts-2",
+      "functionId": "accounts",
+      "sessionKey": "S18",
+      "title": "Baselining journal narrative effort",
+      "scenario": "Before redesigning how journal narratives are written, accounts measures how long and how accurate they are today.",
+      "input": "A simple timing log of current journal narratives written manually, plus sample mock narratives.",
+      "aiDoes": "Helps structure the baseline table and summarises the timing log; it does not write the baseline.",
+      "howTo": [
+        "Time several real journal narratives written the current way.",
+        "Record review comments and rework for each.",
+        "Paste the log and ask for a baseline summary table.",
+        "Check the table totals against your log."
+      ],
+      "humanCheck": "The accountant confirms the baseline figures; the manager agrees the measures are fair.",
+      "measure": "Minutes per journal narrative; review comments per narrative.",
+      "boundary": "Timing logs contain no ledger or customer data. AI formats; measurements are recorded by people."
+    },
+    {
+      "id": "aic-quality-2",
+      "functionId": "quality",
+      "sessionKey": "S19",
+      "title": "Before and after: quality report summaries",
+      "scenario": "Quality compares time and rework on monthly quality report summaries before and after the AI-assisted workflow.",
+      "input": "Baseline and post-change timing and rework logs, pasted as a simple table.",
+      "aiDoes": "Builds a before-and-after comparison table and drafts a cautious narrative of the results and limits.",
+      "howTo": [
+        "Paste the baseline and new measures in one table.",
+        "Ask for differences per measure, including review time.",
+        "Ask for a short narrative that states sample size and limits.",
+        "Recalculate the key differences yourself."
+      ],
+      "humanCheck": "The quality analyst recalculates the comparison; the manager reviews claims before they are shared.",
+      "measure": "Minutes per summary and rework items, before and after.",
+      "boundary": "Only measurement data is pasted. No benefit is claimed beyond what the learner's own data shows."
+    },
+    {
+      "id": "aic-learning-2",
+      "functionId": "learning",
+      "sessionKey": "S20",
+      "title": "Workflow to peer quick guide",
+      "scenario": "A tested workflow needs a short guide so peers in other teams can adopt it without a training session.",
+      "input": "The learner's own workflow design, prompts and checks, pasted as text.",
+      "aiDoes": "Drafts a one-page quick guide: when to use, steps, prompts, required checks and where to get help.",
+      "howTo": [
+        "Paste your workflow design, prompts and checks.",
+        "Ask for a one-page guide for a first-time user.",
+        "Test the guide with one peer who has not seen it.",
+        "Revise wherever the peer hesitated."
+      ],
+      "humanCheck": "The workflow owner checks the guide is accurate and includes every required human check.",
+      "measure": "Peers able to run the workflow from the guide alone.",
+      "boundary": "Guide contains no work data. Prompts must keep the data rules and human review steps."
+    },
+    {
+      "id": "aic-risk-2",
+      "functionId": "risk",
+      "sessionKey": "S21",
+      "title": "Control narrative for an AI workflow",
+      "scenario": "Risk documents a responsible AI risk in an AI-assisted workflow as a control narrative, in register style.",
+      "input": "The learner's workflow description and identified risk, with no confidential data.",
+      "aiDoes": "Drafts a control narrative: risk description, cause, control, owner, frequency and evidence of operation.",
+      "howTo": [
+        "Paste your workflow steps and the risk you identified.",
+        "Ask for a control narrative using register-style fields.",
+        "Make the control a specific action with a named owner.",
+        "Check the evidence would show the control is working."
+      ],
+      "humanCheck": "The learner and risk colleague check the control is realistic, owned and evidenced.",
+      "measure": "Control steps followed per workflow run; issues caught by the control.",
+      "boundary": "Workflow descriptions only; no confidential data. AI drafts; risk owners decide ratings and controls."
+    },
+    {
+      "id": "aic-customer-insights-2",
+      "functionId": "customer-insights",
+      "sessionKey": "S22",
+      "title": "Assembling an insight report storyline",
+      "scenario": "Insights must turn scattered findings into one report with a clear storyline, mirroring how learners assemble their case.",
+      "input": "Mock theme tables, key figures and notes from several insight analyses.",
+      "aiDoes": "Proposes a report outline and storyline, linking each section to the supplied evidence.",
+      "howTo": [
+        "Paste your findings, figures and notes in labelled sections.",
+        "Ask for a storyline outline: problem, evidence, insight, action.",
+        "Ask it to cite which input supports each section.",
+        "Rewrite the headline message yourself."
+      ],
+      "humanCheck": "The insights analyst checks each claim is supported and owns the final conclusions.",
+      "measure": "Minutes to a reviewable report draft; unsupported claims found in review.",
+      "boundary": "Anonymised or mock findings only. AI structures the story; the analyst decides what is concluded."
+    },
+    {
+      "id": "aic-audit-2",
+      "functionId": "audit",
+      "sessionKey": "S23",
+      "title": "Evidence-testing a findings summary",
+      "scenario": "An auditor checks a draft findings summary to confirm every statement is backed by evidence before review.",
+      "input": "A mock findings summary and a list of the evidence obtained, pasted as text.",
+      "aiDoes": "Lists each claim, matches it to the supplied evidence and flags claims with weak or no support.",
+      "howTo": [
+        "Paste the draft findings and the evidence list.",
+        "Ask for a claim-by-claim table with matching evidence.",
+        "Review each flagged claim and decide the fix yourself.",
+        "Record changes for the reviewer."
+      ],
+      "humanCheck": "The auditor decides each fix; the audit lead reviews findings before they are issued.",
+      "measure": "Unsupported claims found per summary; minutes to complete the check.",
+      "boundary": "Mock or approved findings only. AI flags gaps; audit judgements and conclusions stay human."
+    },
+    {
+      "id": "aic-lending-2",
+      "functionId": "lending",
+      "sessionKey": "S24",
+      "title": "Stress-testing a loan policy briefing",
+      "scenario": "A lending colleague prepares to brief a policy change and must anticipate challenging questions from reviewers.",
+      "input": "A mock summary comparing old and new loan policy wording.",
+      "aiDoes": "Generates likely challenge questions by theme and drafts answer outlines that point back to the policy text.",
+      "howTo": [
+        "Paste the mock policy comparison summary.",
+        "Ask for the ten hardest questions a sceptical reviewer would ask.",
+        "Ask for answer outlines citing the policy wording.",
+        "Rewrite the answers in your own words and rehearse."
+      ],
+      "humanCheck": "The lending colleague checks answers against the policy; policy owners approve any interpretation.",
+      "measure": "Questions anticipated versus questions actually asked.",
+      "boundary": "Mock or approved policy text only. AI never interprets policy for credit decisions on cases."
+    }
+  ]
+}
